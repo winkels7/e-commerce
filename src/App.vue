@@ -1,18 +1,5 @@
-<script setup>
-import { RouterLink, RouterView } from "vue-router";
-import HelloWorld from "./components/HelloWorld.vue";
-</script>
-
 <template>
     <header>
-        <img
-            alt="Vue logo"
-            class="logo"
-            src="@/assets/logo.svg"
-            width="125"
-            height="125"
-        />
-
         <div class="wrapper">
             <HelloWorld msg="You did it!" />
 
@@ -23,8 +10,31 @@ import HelloWorld from "./components/HelloWorld.vue";
         </div>
     </header>
 
-    <RouterView />
+    <div>
+        <button
+            uk-toggle="target: #my-id"
+            type="button"
+            class="uk-button uk-button-primary"
+        >
+            Abrir Modal
+        </button>
+        <!-- This is the modal -->
+        <div id="my-id" uk-modal>
+            <div class="uk-modal-dialog uk-modal-body">
+                <h2 class="uk-modal-title">Isso é um Modal</h2>
+                <div class="uk-padding-large">
+                    <RouterView />
+                </div>
+            </div>
+        </div>
+    </div>
+
 </template>
+
+<script setup>
+import { RouterLink, RouterView } from "vue-router";
+import HelloWorld from "./components/HelloWorld.vue";
+</script>
 
 <style scoped>
 header {

@@ -1,11 +1,15 @@
-import { createApp } from 'vue'
-import App from './App.vue'
-import router from './router'
+import { createApp } from "vue";
+import App from "./App.vue";
+import router from "./router";
 
-import './assets/main.css'
+import "./libs/uikit/css/uikit.css";
+import "./libs/uikit/js/uikit.js";
+import "./libs/uikit/js/uikit-icons.js";
 
-const app = createApp(App)
+import "./assets/main.css";
 
-app.use(router)
+const app = createApp(App);
 
-app.mount('#app')
+app.use(router);
+
+app.mount("#app");
