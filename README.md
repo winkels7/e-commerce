@@ -3,7 +3,7 @@ Nesse desafio vamos construir um e-commerce do zero usando apenas um framework, 
 
 ## O Briefing (Atenção)
 
-Seu João vende ingressos para um parque de eventos na cidade do Rio de Janeiro no qual ele foi concorreu a uma licitação, os ingressos são: Inteiro para adultos, meio para crianças e adolescentes. Nesses ingressos também consta 3 serviços de turismo ficando o quadro de itens assim:
+Seu João vende ingressos para um parque de eventos na cidade do Rio de Janeiro no qual ele concorreu e ganhou uma licitação, os ingressos são: Inteiro para adultos, meio para crianças e adolescentes. Nesses ingressos também consta 3 serviços de turismo ficando o quadro de itens assim:
 1. Inteiro
 2. Meia-entrada
 3. PCDs
