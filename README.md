@@ -93,7 +93,7 @@ Será usado o [ExpressJS](https://expressjs.com/) um framework em nodeJS para cr
 
 **Para Espartanos**: Faça o mesmo planejamento e entregue com mais qualidade.
 
-Para garantir a qualidade do desenvolvimento desenvolvimento usaremos o prettier e o eslint para formatar do jeito certo a codificação.
+Para garantir a qualidade do desenvolvimento usaremos o prettier e o eslint para formatar do jeito certo a codificação.
 
 Boa sorte a todos, vocês precisarão!
 
