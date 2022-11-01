@@ -8,11 +8,10 @@ import "./libs/uikit/js/uikit-icons.js";
 
 import "./assets/main.css";
 
+import "./IndexedDB.js";
+
 const app = createApp(App);
 
 app.use(router);
 
 app.mount("#app");
-
-//////////////////////////////////////////////////////////////////////////////////////////
-
