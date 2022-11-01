@@ -5346,7 +5346,7 @@ ul.uk-nav-sub {
  */
 .uk-navbar-nav > li > a {
   padding: 0 0;
-  color: #999;
+  color: rgb(255, 255, 255);
   text-transform: uppercase;
   transition: 0.1s ease-in-out;
   transition-property: color, background-color;
@@ -7327,7 +7327,7 @@ ul.uk-nav-sub {
 /* Color modifiers
  ========================================================================== */
 .uk-text-muted {
-  color: #999 !important;
+  color: rgb(255, 255, 255) !important;
 }
 .uk-text-emphasis {
   color: #333 !important;
@@ -7662,7 +7662,7 @@ iframe[data-uk-cover] {
   background-color: #f8f8f8;
 }
 .uk-background-primary {
-  background-color: #1e87f0;
+  background-color: #64732F;
 }
 .uk-background-secondary {
   background-color: #222;
