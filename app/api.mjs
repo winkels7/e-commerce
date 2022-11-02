@@ -1,8 +1,11 @@
 import express from 'express'
 import cors from 'cors'
+import bodyParser from 'body-parser'
+
 const app = express()
 
 app.use(cors())
+app.use(bodyParser.json())
 
 app.get('/api/', (req, res) => {
         // abra no navegador o link http://localhost:3000/api
@@ -24,7 +27,7 @@ app.get('/api/login', (req, res) => {
 
 app.post('/register', (req, res) =>{
         res.send({
-                mensagem: 'Ola mundo'
+                mensagem: `Olá mundo! O seu E-mail é ${req.body.email}`
         })
 })
 
