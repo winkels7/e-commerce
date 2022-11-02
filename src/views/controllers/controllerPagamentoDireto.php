@@ -38,4 +38,3 @@ curl_close($curl);
 $xml = simplexml_load_string($retorno);
 // var_dump($xml);
 echo $xml->code;
-?>
