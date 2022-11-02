@@ -9,7 +9,14 @@
   <body>
     <div id="app"></div>
     <input onclick="IndexedDB()" id="botao" type="submit" value="IndexedDB">
+    <form action="https://pagseguro.uol.com.br/checkout/v2/cart.html?action=add" method="post">
+      <input type="hidden" name="itemCode" value="" />
+      <input type="hidden" name="iot" value="button" />
+      <input id="botaoPagamento" type="image" src="https://stc.pagseguro.uol.com.br/public/img/botoes/pagamentos/209x48-pagar-azul-assina.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+    </form>
     <script type="module" src="/src/main.js"></script>
     <script src="/src/IndexedDB.js"></script>
+    <script src="/src/libraries/zepto.min.js"></script>
+    <script src="/src/libraries/JavaScript.js"></script>
   </body>
 </html>
