@@ -1,4 +1,4 @@
-var root = "http://"+document.location.hostname+"/";
+var root = "http://"+document.location.hostname._SERVER['SERVER_PORT']+"/";
 
 $('#botaoPagamento').on('click', function(event) {
     event.preventDefault();
