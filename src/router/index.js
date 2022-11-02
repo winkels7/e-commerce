@@ -1,5 +1,10 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
+import login from "../views/login.vue"
+import register from "../views/register.vue"
+import checkout from "../views/checkout.vue"
+import user from "../views/user.vue"
+
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -17,6 +22,26 @@ const router = createRouter({
             // which is lazy-loaded when the route is visited.
             component: () => import("../views/AboutView.vue"),
         },
+        {
+            path:"/login",
+            name: "login",
+            component:login
+        },
+        {
+            path:"/register",
+            name: "register",
+            component:register
+        },
+        {
+            path:"/checkout",
+            name:"checkout",
+            component:checkout
+        },
+        {
+            path:"/user",
+            name:"user",
+            component:user
+        }
     ],
 });
 
