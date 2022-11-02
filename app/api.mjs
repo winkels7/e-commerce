@@ -1,5 +1,8 @@
 import express from 'express'
+import cors from 'cors'
 const app = express()
+
+app.use(cors())
 
 app.get('/api/', (req, res) => {
         // abra no navegador o link http://localhost:3000/api
@@ -17,6 +20,12 @@ app.get('/api/login', (req, res) => {
                 result: 'Olá login',
         })
         res.send(request)
+})
+
+app.post('/register', (req, res) =>{
+        res.send({
+                mensagem: 'Ola mundo'
+        })
 })
 
 app.listen(3000)
