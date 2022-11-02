@@ -1,4 +1,4 @@
-var root = "http://"+document.location.hostname+":5174/";
+var root = "http://"+document.location.hostname+"/";
 
 $('#botaoPagamento').on('click', function(event) {
     event.preventDefault();
