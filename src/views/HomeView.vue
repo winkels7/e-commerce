@@ -69,7 +69,7 @@
         </div>
 
         <div
-                class="uk-container-large uk-background-secondary uk-flex uk-flex-center"
+                class="uk-container-large uk-background-secondary uk-flex uk-flex-center uk-box-shadow-medium"
         >
                 <div
                         class="uk-container-xlarge uk-background-muted uk-width-3-4 uk-height-large uk-margin-large-top uk-border-rounded uk-box-shadow-large uk-flex"
@@ -219,6 +219,63 @@
                         </div>
                 </div>
         </div>
+
+        <div class="uk-container uk-container-medium uk-margin-large-top uk-position-relative">
+
+<div class="uk-flex uk-flex-between">
+
+<div class="uk-position-relative uk-visible-toggle uk-light uk-width-1-3 " tabindex="-1" uk-slideshow="autoplay: true min-height: 300; max-height: 700; width: 300; animation: push">
+
+<ul class="uk-slideshow-items">
+<li>
+<img src="../assets/Captura de tela de 2022-11-03 08-55-48.png" alt="" uk-cover>
+</li>
+<li>
+<img src="../assets/Captura de tela de 2022-11-03 08-56-05.png" alt="" uk-cover>
+</li>
+<li>
+<img src="../assets/Captura de tela de 2022-11-03 08-57-29.png" alt="" uk-cover>
+</li>
+<li>
+<img src="../assets/Captura de tela de 2022-11-03 08-58-05.png" alt="" uk-cover>
+</li>
+</ul>
+
+<a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+<a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
+</div>
+
+<div class="uk-article uk-width-1-2">
+<h1>Produtos</h1>
+<p class="uk-text-default">Você deseja algumas lebrancinhas? <br>Não se preocupe, temos diversos produtos no nosso parque como: camisetas, copos personalizados, ecobags e muito mais!!</p>
+</div>
+
+</div>
+
+</div>
+
+<article class="uk-comment uk-comment-primary uk-margin-large-top uk-width-1-2 uk-margin-medium-left" role="comment">
+    <header class="uk-comment-header">
+        <div class="uk-grid-medium uk-flex-middle" uk-grid>
+            <div class="uk-width-auto">
+                <img class="uk-comment-avatar uk-border-circle" src="../assets/author2.jpg" width="100" height="200" alt="author">
+            </div>
+            <div class="uk-width-expand">
+                <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">Marcio Costa</a></h4>
+                <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
+                    <li><a href="#">12 dias atrás</a></li>
+                    <li><a href="#">Reply</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="uk-comment-body">
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+    </div>
+</article>
+
+
 </template>
 
 <script>

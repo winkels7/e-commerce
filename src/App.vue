@@ -18,6 +18,24 @@
         
         <RouterView />
 
+        <div class="uk-container-small uk-background-primary uk-margin-large-top uk-flex uk-flex-between">
+              
+                <div class="uk-margin-top uk-margin-medium-left">
+                        <h3 class="uk-text-muted">Politicas</h3>
+                        <ul class="uk-text-muted uk-list">
+                          <RouterLink to="/politicas" class="uk-link-heading"><li>Politicas de termos</li></RouterLink>
+                          <RouterLink to="/politicas" class="uk-link-heading"><li>Politicas de Cookies</li> </RouterLink>   
+                        </ul>
+                </div>
+
+                <div class="uk-margin-top">
+                        <img src="./assets/logo.png" alt="logo" class="uk-width-1-2">
+                </div>
+
+    
+
+</div>
+
 </template>
 
 <script setup>
