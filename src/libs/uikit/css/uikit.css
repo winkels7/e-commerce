@@ -2062,7 +2062,7 @@ select.uk-form-width-xsmall {
   line-height: 1.5;
   background: none;
   /* 2 */
-  color: #333;
+  color: rgb(255, 255, 255);
   position: relative;
 }
 .uk-button-text::before {
