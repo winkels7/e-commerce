@@ -68,6 +68,7 @@
       <form class="uk-margin-large-left uk-margin-medium-top">
         <h1>Compre seu Ingresso</h1>
         <hr class="uk-divider-small" />
+        
 
         <div class="uk-margin uk-margin-medium-top">
           <div class="uk-inline">
@@ -97,12 +98,39 @@
           </div>
         </div>
 
+        <div class="uk-flex uk-flex-column">
         <a
           @click="IndexedDB()"
-          class="uk-button uk-button-secondary uk-margin-small-bottom uk-margin-medium-top uk-border-rounded"
+          class="uk-button uk-button-secondary uk-margin-small-bottom uk-margin-small-top uk-border-rounded"
         >
           Adicionar no Carrinho
         </a>
+
+        <a class="uk-button uk-button-secondary uk-button-small uk-border-rounded" type="button" uk-toggle="target: #offcanvas-push">+ Informações</a>
+
+        <div id="offcanvas-push" uk-offcanvas="mode: reveal; overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+        <h3>LEI DA MEIA ENTRADA</h3>
+
+        <p>A meia entrada é regulamentada pela Lei nº 12.933/2013, que dispõe sobre o acesso a eventos culturais, esportivos e de entretenimento.</p>
+        
+        <p>De acordo com a lei, são considerados beneficiários da meia entrada:</p>
+
+        <p>– Estudantes: com comprovante de matrícula e identidade estudantil;</p>
+
+        <p>– Professores: com comprovante de identificação funcional;</p>
+    
+        <p>– Pessoas com deficiência: com comprovante de identidade funcional ou cartão deBeneficiário do INSS;</p>
+
+        <p>– Jovens de baixa renda: com comprovante de inscrição no Cadastro Único para Programas Sociais do Governo Federal (CadÚnico) ou no Cadastro Único para Programas Sociais do Governo Estadual e do Município (CadÚnico-SE/MG);</p>
+    
+    </div>
+</div>
+    </div>
+
       </form>
       <!-- tipo do ingresso -->
       <div class="uk-flex uk-flex-column uk-width-1-3 uk-margin-xlarge-left">
