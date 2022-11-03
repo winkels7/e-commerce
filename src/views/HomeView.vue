@@ -118,12 +118,12 @@
                                         </div>
                                 </div>
 
-                                <button
+                                <a
                                         @click="IndexedDB()"
                                         class="uk-button uk-button-primary uk-margin-small-bottom uk-margin-medium-top"
                                 >
                                         Comprar
-                                </button>
+                            </a>
                         </form>
                         <!-- tipo do ingresso -->
                         <div
