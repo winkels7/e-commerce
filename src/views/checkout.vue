@@ -84,39 +84,64 @@
 
 <script>
     export default {
+        /*created: function () {
+            this.mostrarCarrinho()
+        },
         methods: {
-            mostrarCarrinho() {
-                const transaction = db.transaction(['ingressos'])
-                const objectStore = transaction.objectStore('ingressos')
+            mostrarCarrinho() */
+            mounted() {
+                alert('entrou')
+
+                var transaction = db.transaction('ingressos', 'readonly')
                 
-                const request = objectStore.get('Inteiro')
+                transaction.oncomplete = (event) => {
+                    // wut
+                    // alert(`transação completa`)
+                    console.log(`transação completa`)
+                };
 
-                var quantInteiro = request.result.quantidade
-                var precoInteiro = request.result.preco
+                var objectStore = transaction.objectStore('ingressos')
+                
+                // objectStore.orderBy(Key)
+                //const request = objectStore.get('ingressos')
+                var request = objectStore.getAll()
 
-                request.onerror = (event) => {
-                    alert(`Falha ao buscar informações no banco de dados`)
+                request.onsuccess = (event) => {
+                    let eventTarget = ev.target
+                    // alert(`${eventTarget}`)
+                    console.log(`${eventTarget}`)
                 }
 
+                request.onerror = (event) => {
+                    // alert(`Falha ao buscar informações no banco de dados`)
+                    console.log(`Falha ao buscar informações no banco de dados`)
+                }
+
+                /////////////////////////////////////////////////
+                /*
+                var quantInteiro = request.result.inteiro
+                var quantMeia = request.result.meia
+                var quantPcd = request.result.pcd
+                var precoInteiro = request.result.precoInt
+                var precoMei = request.result.precoMei
+                var tour = request.result.tour
+
+                /*request.onerror = (event) => {
+                    alert(`Falha ao buscar informações no banco de dados`)
+                }*/
+                /*
                 request.onsuccess = (event) => {
                     if(quantInteiro > 0 ) {
-                        console.log(`Produto: ${request.result.tipo}<br>Tour: ${request.result.tour}<br>Quantidade: ${request.result.quantidade}`)
+                        console.log(`Produto: Entrada inteira<br>Quantidade: ${quantInteiro}<br>Tour: ${tour}`)
                     }
-                }
-
-                var quantMeia = request.result.quantidade
-                var precoMeia = request.result.preco
-
-                request.onerror = (event) => {
-                    alert(`Falha ao buscar informações no banco de dados`)
-                }
-
-                request.onsuccess = (event) => {
-                    if(quantMeia > 0 ) {
-                        console.log(`Produto: ${request.result.tipo}<br>Tour: ${request.result.tour}<br>Quantidade: ${request.result.quantidade}`)
+                    if(quantMeia > 0) {
+                        console.log(`Produto: Meia entrada<br>Quantidade: ${quantMeia}<br>Tour: ${tour}`)
                     }
-                }
+                    if(quantPcd > 0) {
+                        console.log(`Produto: Entrada PCD<br>Quantidade: ${quantPcd}<br>Tour: ${tour}`)
+                    }
+                }*/
             }
         }
-    }
+    /*}*/
 </script>

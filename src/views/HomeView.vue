@@ -406,20 +406,21 @@ export default {
         const store = db.createObjectStore('ingressos', {
           autoIncrement: true,
         })
-        store.createIndex('ingresso_tipo', ['tipo'], {
+        /*store.createIndex('ingresso_tipo', ['tipo'], {
           unique: false,
-        })
+        })*/
         store.createIndex('ingresso_tour', ['tour'], {
           unique: false,
         })
-        store.createIndex('ingresso_preco', ['preco'], {
+        /*store.createIndex('ingresso_preco', ['preco'], {
+          unique: false,
+        })*/
+        store.createIndex('ingresso_pago', ['pago'], {
           unique: false,
         })
 
         // alert(`Upgrade encerrado`)
       }
-
-      
 
       request.onsuccess = () => {
         // alert(`Sucesso iniciado`)
@@ -471,6 +472,8 @@ export default {
           meia: ingMeia,
           pcd: ingPCD,
           tour: tourType,
+          precoInt: inteiro,
+          precoMei: meio,
           pago: false
         })
 
