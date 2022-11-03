@@ -6896,7 +6896,8 @@ ul.uk-nav-sub {
 }
 /* Pixel */
 .uk-width-small {
-  width: 150px;
+  width: 10px;
+  
 }
 .uk-width-medium {
   width: 300px;
