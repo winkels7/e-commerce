@@ -62,38 +62,40 @@ Com diversas atrações e diversão garantida para toda a familia.</p>
                 </div>
                 
             </form>        
-            <div class="uk-width-1-3@s uk-grid-colapse" uk-grid>
+            <div class="uk-flex uk-flex-column uk-width-1-3 uk-margin-xlarge-left ">
     <div>
-        <div class="uk-card uk-card-default uk-card-small uk-card-body uk-postion-relative">
-            <h3 class="uk-card-title">Inteira</h3>
-            <p class="uk-left">R$ 12,00</p>
+        <div class="uk-card uk-card-default uk-card-small uk-height-small uk-card-body">
+            <h4>Inteira</h4>
+            <p class="uk-left uk-margin-small-bottom">R$ 12,00</p>
             <div class="uk-position-absolute uk-position-medium uk-position-center-right">
                 <img src="../assets/Icone-ticket-Png-removebg-preview (1).png" alt="ticket" width="100">
             </div>
-        <a href="#" class="uk-button uk-button-text">Comprar</a>
-        <input class="uk-input uk-form-width-xsmall uk-border-pill uk-margin-small-left" type="number" name="" id="">
+            <button class="uk-button uk-button-text uk-margin-small-bottom">Comprar</button>
+        <input class="uk-input uk-form-width-xsmall uk-border-pill uk-margin-small-left uk-margin-small-bottom uk-box-shadow-small" type="number" value=1 min="1" >
         </div>
     </div>
 
     <div>
-        <div class="uk-card uk-card-default uk-card-small uk-card-body uk-postion-relative">
-            <h3 class="uk-card-title">Meia-Entrada</h3>
-            <p class="uk-left">R$ 6,00</p>
+        <div class="uk-card uk-card-default uk-card-small uk-height-small uk-card-body uk-postion-relative">
+            <h4 >Meia-Entrada</h4>
+            <p class="uk-left uk-margin-small-bottom">R$ 6,00</p>
             <div class="uk-position-absolute uk-position-medium uk-position-center-right">
                 <img src="../assets/Icone-ticket-Png-removebg-preview (1).png" alt="ticket" width="100">
             </div>
-        <a href="#" class="uk-button uk-button-text">Comprar</a>
+        <button class="uk-button uk-button-text uk-margin-small-bottom">Comprar</button>
+        <input class="uk-input uk-form-width-xsmall uk-border-pill uk-margin-small-left uk-margin-small-bottom uk-box-shadow-small" type="number" value=1 min="1" >
         </div>
     </div>
 
     <div>
-        <div class="uk-card uk-card-default uk-card-small uk-card-body uk-postion-relative">
-            <h3 class="uk-card-title">PCDs</h3>
-            <p class="uk-left">R$ 6,00</p>
+        <div class="uk-card uk-card-default uk-card-small uk-height-small uk-card-body uk-postion-relative">
+            <h4>PCDs</h4>
+            <p class="uk-left uk-margin-small-bottom">R$ 6,00</p>
             <div class="uk-position-absolute uk-position-medium uk-position-center-right">
                 <img src="../assets/Icone-ticket-Png-removebg-preview (1).png" alt="ticket" width="100">
             </div>
-        <a href="#" class="uk-button uk-button-text">Comprar</a>
+            <button class="uk-button uk-button-text uk-margin-small-bottom">Comprar</button>
+        <input class="uk-input uk-form-width-xsmall uk-border-pill uk-margin-small-left uk-margin-small-bottom uk-box-shadow-small" type="number" value=1 min="1">
         </div>
     </div>
 
