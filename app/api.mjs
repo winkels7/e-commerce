@@ -3,8 +3,14 @@ import cors from 'cors'
 
 const app = express()
 
+const { sequelize } = require('../models')
+
 app.use(cors())
 app.use(express.json())
+
+sequelize.sync().then(() => {
+    console.log('conectado com o banco de dados.')
+})
 
 app.get('/api/', (req, res) => {
         // abra no navegador o link http://localhost:3000/api
