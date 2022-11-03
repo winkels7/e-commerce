@@ -15,7 +15,7 @@ app.get('/api/', (req, res) => {
         res.send(request)
 })
 
-const listaLogin = [ ]
+const listaLogin = []
 
 app.get('/api/login', (req, res) => {
         res.send(listaLogin)
