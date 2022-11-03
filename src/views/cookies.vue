@@ -74,14 +74,7 @@
 
     <p>Esta política é efetiva a partir de <strong>3 novembro 2022 11:16</strong></p>
 
-    <div class="uk-grid-small uk-child-width-auto" uk-grid>
-        <div>
-            <a class="uk-button uk-button-text" href="#">Read more</a>
-        </div>
-        <div>
-            <a class="uk-button uk-button-text" href="#">5 Comments</a>
-        </div>
-    </div>
+   
 
 </article>
 </div>          
@@ -89,3 +82,16 @@
 </div>
 
 </template>
+
+<script>
+
+export default {
+
+  mounted(){
+
+    window.scrollTo(0,0)
+  }
+
+}
+
+</script>

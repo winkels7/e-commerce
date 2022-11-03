@@ -29,14 +29,7 @@
 
     <p>O uso continuado de nosso site será considerado como aceitação de nossas práticas em torno de privacidade e informações pessoais. Se você tiver alguma dúvida sobre como lidamos com dados do usuário e informações pessoais, entre em contacto connosco.</p>
 
-    <div class="uk-grid-small uk-child-width-auto" uk-grid>
-        <div>
-            <a class="uk-button uk-button-text" href="#">Read more</a>
-        </div>
-        <div>
-            <a class="uk-button uk-button-text" href="#">5 Comments</a>
-        </div>
-    </div>
+
 
 </article>
 </div>          
@@ -44,3 +37,16 @@
 </div>
 
 </template>
+
+<script>
+
+export default {
+
+  mounted(){
+
+    window.scrollTo(0,0)
+  }
+
+}
+
+</script>

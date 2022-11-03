@@ -2881,12 +2881,12 @@ select.uk-form-width-xsmall {
  */
 .uk-totop {
   padding: 5px;
-  color: #999;
+  color: rgb(0, 0, 0);
   transition: color 0.1s ease-in-out;
 }
 /* Hover */
 .uk-totop:hover {
-  color: #666;
+  color: #414141;
 }
 /* OnClick */
 .uk-totop:active {
