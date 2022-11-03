@@ -52,6 +52,7 @@ Com diversas atrações e diversão garantida para toda a familia.</p>
                         </div>
                     </div>
 
+                    <!-- tipo do tour -->
                     <div class="uk-margin">
                         <label class="uk-form-label" for="form-stacked-select">Tour</label>
                             <div class="uk-form-controls">
@@ -64,7 +65,8 @@ Com diversas atrações e diversão garantida para toda a familia.</p>
                         
                 </div>
                 
-            </form>        
+            </form> 
+            <!-- tipo do ingresso -->       
             <div class="uk-flex uk-flex-column uk-width-1-3 uk-margin-xlarge-left ">
     <div>
         <div class="uk-card uk-card-default uk-card-small uk-height-small uk-card-body">
@@ -74,10 +76,11 @@ Com diversas atrações e diversão garantida para toda a familia.</p>
                 <img src="../assets/Icone-ticket-Png-removebg-preview (1).png" alt="ticket" width="100">
             </div>
             <button class="uk-button uk-button-text uk-margin-small-bottom">Comprar</button>
-        <input class="uk-input uk-form-width-xsmall uk-border-pill uk-margin-small-left uk-margin-small-bottom uk-box-shadow-small" type="number" value=0 min="0" >
+        <input id="inteira" class="uk-input uk-form-width-xsmall uk-border-pill uk-margin-small-left uk-margin-small-bottom uk-box-shadow-small" type="number" value=0 min="0" >
         </div>
     </div>
 
+    <!-- tipo do tour -->
     <div>
         <div class="uk-card uk-card-default uk-card-small uk-height-small uk-card-body uk-postion-relative">
             <h4 >Meia-Entrada</h4>
@@ -86,7 +89,7 @@ Com diversas atrações e diversão garantida para toda a familia.</p>
                 <img src="../assets/Icone-ticket-Png-removebg-preview (1).png" alt="ticket" width="100">
             </div>
         <button class="uk-button uk-button-text uk-margin-small-bottom">Comprar</button>
-        <input class="uk-input uk-form-width-xsmall uk-border-pill uk-margin-small-left uk-margin-small-bottom uk-box-shadow-small" type="number" value=0 min="0" >
+        <input id="meia" class="uk-input uk-form-width-xsmall uk-border-pill uk-margin-small-left uk-margin-small-bottom uk-box-shadow-small" type="number" value=0 min="0" >
         </div>
     </div>
 
@@ -98,7 +101,7 @@ Com diversas atrações e diversão garantida para toda a familia.</p>
                 <img src="../assets/Icone-ticket-Png-removebg-preview (1).png" alt="ticket" width="100">
             </div>
             <button class="uk-button uk-button-text uk-margin-small-bottom">Comprar</button>
-        <input class="uk-input uk-form-width-xsmall uk-border-pill uk-margin-small-left uk-margin-small-bottom uk-box-shadow-small" type="number" value=0 min="0">
+        <input id="pcd" class="uk-input uk-form-width-xsmall uk-border-pill uk-margin-small-left uk-margin-small-bottom uk-box-shadow-small" type="number" value=0 min="0">
         </div>
     </div>
 
