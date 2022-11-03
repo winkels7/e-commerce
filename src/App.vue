@@ -1,16 +1,26 @@
 <template>
 
         <div class="uk-container uk-container-expand uk-background-primary">
-                <nav class="uk-navbar ">
+                <nav class="uk-navbar " uk-navbar>
                         <div class="uk-navbar-left">
                             <RouterLink to="/"><img src="./assets/logo.png" class="uk-width-1-3" alt=""></RouterLink>
                         </div>
                         <div class="uk-navbar-right">
                                 <ul class="uk-navbar-nav uk-visible@m">
                                         <li><RouterLink to="/">Home</RouterLink></li>
-                                        <li><RouterLink to="/login">Login</RouterLink></li>
+                                        <!-- <li><RouterLink to="/login">Login</RouterLink></li> -->
                                         <li><RouterLink to="/checkout" uk-icon="cart"></RouterLink></li>
-                                        <li><RouterLink to="/user" uk-icon="user"></RouterLink></li>
+                                        <!-- <li><RouterLink to="/user" uk-icon="user"></RouterLink></li> -->
+                                        <li><a uk-icon="user"></a>
+                                                <div class="uk-navbar-dropdown">
+                                                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                                <li class="uk-active uk-margin-small-bottom"><RouterLink to="/user">Nome</RouterLink></li>
+                                                                <li><RouterLink to="/login"> <span class="uk-margin-small-right" uk-icon="sign-in"></span>Fazer login</RouterLink></li>
+                                                                <li><RouterLink to="/register"><span class="uk-margin-small-right" uk-icon="plus"></span>Criar conta</RouterLink></li>
+                                                                <li><a href="#"> <span class="uk-margin-small-right" uk-icon="sign-out"></span>Sair</a></li>
+                                                        </ul>
+                                                </div>
+                                        </li>
                                 </ul>
                         </div>
                 </nav>
@@ -21,10 +31,10 @@
         <div class="uk-container-small uk-background-primary uk-margin-large-top uk-flex uk-flex-between">
               
                 <div class="uk-margin-top uk-margin-medium-left">
-                        <h3 class="uk-text-muted">Politicas</h3>
+                        <h3 class="uk-text-muted">Políticas</h3>
                         <ul class="uk-text-muted uk-list">
-                          <RouterLink to="/politicas" class="uk-link-heading"><li>Politicas de termos</li></RouterLink>
-                          <RouterLink to="/politicas" class="uk-link-heading"><li>Politicas de Cookies</li> </RouterLink>   
+                          <RouterLink to="/privacidade" class="uk-link-heading"><li>Políticas de Privacidade</li></RouterLink>
+                          <RouterLink to="/cookies" class="uk-link-heading"><li>Política de cookies</li> </RouterLink>   
                         </ul>
                 </div>
 

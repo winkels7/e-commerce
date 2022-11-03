@@ -26,7 +26,7 @@
           </li>
           <li>
             <img
-              src="../assets/pexels-isaw-company-1124079.jpg"
+              src="../assets/pexels-max-ravier-3436387.jpg"
               alt=""
               uk-cover
             />
@@ -99,9 +99,9 @@
 
         <a
           @click="IndexedDB()"
-          class="uk-button uk-button-primary uk-margin-small-bottom uk-margin-medium-top"
+          class="uk-button uk-button-secondary uk-margin-small-bottom uk-margin-medium-top uk-border-rounded"
         >
-          Comprar
+          Adicionar no Carrinho
         </a>
       </form>
       <!-- tipo do ingresso -->
@@ -241,24 +241,28 @@
 
       <div class="uk-article uk-width-1-2">
         <h1>Produtos</h1>
+        <hr class="uk-divider-small">
         <p class="uk-text-default">
-          Você deseja algumas lebrancinhas? <br />Não se preocupe, temos
+          Você deseja algumas lembrancinhas? <br />Não se preocupe, temos
           diversos produtos no nosso parque como: camisetas, copos
-          personalizados, ecobags e muito mais!!
+          personalizados, ecobags e muito mais!! <br>
+          Venha nos visitar!!
         </p>
       </div>
     </div>
   </div>
 
+
+<div class="uk-flex uk-flex-center uk-margin-medium-top uk-margin-bottom " uk-slider>
   <article
-    class="uk-comment uk-comment-primary uk-margin-large-top uk-width-1-2 uk-margin-medium-left"
+    class="uk-comment uk-comment-primary uk-margin-large-top uk-width-1-3 uk-box-shadow-small uk-box-shadow-hover-large "
     role="comment"
   >
     <header class="uk-comment-header">
       <div class="uk-grid-medium uk-flex-middle" uk-grid>
         <div class="uk-width-auto">
           <img
-            class="uk-comment-avatar uk-border-circle"
+            class="uk-comment-avatar uk-border-rounded"
             src="../assets/author2.jpg"
             width="100"
             height="200"
@@ -267,13 +271,12 @@
         </div>
         <div class="uk-width-expand">
           <h4 class="uk-comment-title uk-margin-remove">
-            <a class="uk-link-reset" href="#">Marcio Costa</a>
+            <div class="uk-link-reset" href="#">Marcio Costa</div>
           </h4>
           <ul
             class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top"
           >
-            <li><a href="#">12 dias atrás</a></li>
-            <li><a href="#">Reply</a></li>
+            <li>12 dias atrás</li>
           </ul>
         </div>
       </div>
@@ -288,6 +291,45 @@
       </p>
     </div>
   </article>
+
+  <article
+    class="uk-comment uk-comment-primary uk-margin-large-top uk-width-1-3 uk-margin-medium-left uk-box-shadow-small uk-box-shadow-hover-large"
+    role="comment"
+  >
+    <header class="uk-comment-header">
+      <div class="uk-grid-medium uk-flex-middle" uk-grid>
+        <div class="uk-width-auto">
+          <img
+            class="uk-comment-avatar uk-border-rounded"
+            src="../assets/author3.jpg"
+            width="100"
+            height="200"
+            alt="author"
+          />
+        </div>
+        <div class="uk-width-expand">
+          <h4 class="uk-comment-title uk-margin-remove">
+            <div class="uk-link-reset" href="#">Alana Souza da Costa</div>
+          </h4>
+          <ul
+            class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top"
+          >
+            <li>20 dias atrás</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="uk-comment-body">
+      <p>
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+        voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+        amet.
+      </p>
+    </div>
+  </article>
+</div>
 </template>
 
 <script>

@@ -5362,8 +5362,7 @@ ul.uk-nav-sub {
 .uk-navbar-nav > li:hover > a,
 .uk-navbar-nav > li > a[aria-expanded="true"] {
   color: #CAD959;
-  transform: scale(1.1);
-  transition: 0.4s ease;
+  transition: 0.2s ease-in-out;
 }
 /* OnClick */
 .uk-navbar-nav > li > a:active {

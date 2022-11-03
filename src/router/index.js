@@ -4,6 +4,8 @@ import login from "../views/login.vue"
 import register from "../views/register.vue"
 import checkout from "../views/checkout.vue"
 import user from "../views/user.vue"
+import privacidade from "../views/privacidade.vue"
+import cookies from "../views/cookies.vue"
 
 
 const router = createRouter({
@@ -41,7 +43,18 @@ const router = createRouter({
             path:"/user",
             name:"user",
             component:user
-        }
+        },
+        {
+            path:"/privacidade",
+            name:"privacidade",
+            component:privacidade
+        },
+        {
+            path:"/cookies",
+            name:"cookies",
+            component:cookies
+        },
+        
     ],
 });
 
