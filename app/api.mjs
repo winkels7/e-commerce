@@ -1,17 +1,19 @@
 import express from 'express'
 import cors from 'cors'
+import bodyParser from 'body-parser'
 
 const app = express()
 
-import { sequelize } from '../models/index.js'
+// import { sequelize } from '../models/index.js'
 // const { sequelize } = require('../models')
 
 app.use(cors())
 app.use(express.json())
+app.use(bodyParser.json())
 
-sequelize.sync().then(() => {
-    console.log('conectado com o banco de dados.')
-})
+// sequelize.sync().then(() => {
+//     console.log('conectado com o banco de dados.')
+// })
 
 app.get('/api/', (req, res) => {
         // abra no navegador o link http://localhost:3000/api
@@ -31,8 +33,8 @@ app.get('/api/login', (req, res) => {
 app.post('/api/login', (req, res) => {
         let email = req.body.email
         let password = req.body.password
-        console.log(dadosLogin)
-        listaLogin.push([email, password])
+        console.log(`Email: ${email} Senha: ${password}`)
+        listaLogin.push(email)
         res.send('Login adicionado com sucesso!')
 })
 
