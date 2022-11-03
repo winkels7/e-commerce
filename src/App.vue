@@ -1,8 +1,9 @@
 <template>
+
         <div class="uk-container uk-container-expand uk-background-primary">
                 <nav class="uk-navbar ">
                         <div class="uk-navbar-left">
-                            <RouterLink to="/" uk-icon="joomla" class="uk-text-muted"></RouterLink>
+                            <RouterLink to="/"><img src="./assets/logo.png" class="uk-width-1-3" alt=""></RouterLink>
                         </div>
                         <div class="uk-navbar-right">
                                 <ul class="uk-navbar-nav uk-visible@m">
@@ -14,7 +15,6 @@
                         </div>
                 </nav>
         </div>
-
         
         <RouterView />
 
