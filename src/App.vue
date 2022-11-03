@@ -48,14 +48,14 @@
 </div>
 <a href="#my-id" uk-scroll uk-totop class="uk-position-bottom-right uk-position-fixed uk-margin-medium-right uk-margin-medium-bottom"></a>
 
-
-
 </template>
 
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
 import modal from "./components/modal.vue"
+
+
 
 
 </script>

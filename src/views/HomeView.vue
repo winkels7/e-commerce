@@ -100,6 +100,7 @@
 
         <div class="uk-flex uk-flex-column">
         <a
+        onclick="UIkit.notification({message:'<span uk-icon=\'icon: check\'></span> Produto adicionado no carrinho!'})"
           @click="IndexedDB()"
           class="uk-button uk-button-secondary uk-margin-small-bottom uk-margin-small-top uk-border-rounded"
         >
@@ -360,9 +361,16 @@
 </div>
 </template>
 
+
 <script>
+
+
 export default {
+
+    
   methods: {
+
+    
     IndexedDB() {
       // o importante é o que importa //
       alert(`Entrou na função`)
@@ -457,5 +465,11 @@ export default {
       }
     },
   },
+
+  
 }
+
+
+
+
 </script>
