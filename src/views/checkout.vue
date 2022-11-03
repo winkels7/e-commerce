@@ -81,3 +81,42 @@
 
   </div>
 </template>
+
+<script>
+    export default {
+        methods: {
+            mostrarCarrinho() {
+                const transaction = db.transaction(['ingressos'])
+                const objectStore = transaction.objectStore('ingressos')
+                
+                const request = objectStore.get('Inteiro')
+
+                var quantInteiro = request.result.quantidade
+                var precoInteiro = request.result.preco
+
+                request.onerror = (event) => {
+                    alert(`Falha ao buscar informações no banco de dados`)
+                }
+
+                request.onsuccess = (event) => {
+                    if(quantInteiro > 0 ) {
+                        console.log(`Produto: ${request.result.tipo}<br>Tour: ${request.result.tour}<br>Quantidade: ${request.result.quantidade}`)
+                    }
+                }
+
+                var quantMeia = request.result.quantidade
+                var precoMeia = request.result.preco
+
+                request.onerror = (event) => {
+                    alert(`Falha ao buscar informações no banco de dados`)
+                }
+
+                request.onsuccess = (event) => {
+                    if(quantMeia > 0 ) {
+                        console.log(`Produto: ${request.result.tipo}<br>Tour: ${request.result.tour}<br>Quantidade: ${request.result.quantidade}`)
+                    }
+                }
+            }
+        }
+    }
+</script>

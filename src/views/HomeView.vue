@@ -373,7 +373,8 @@ export default {
     
     IndexedDB() {
       // o importante é o que importa //
-      alert(`Entrou na função`)
+      // alert(`Entrou na função`)
+      console.log(`Entrou na função`)
 
       // teste de compatibilidade
       const indexedDB =
@@ -398,7 +399,8 @@ export default {
       }
 
       request.onupgradeneeded = () => {
-        alert(`Upgrade iniciado`)
+        // alert(`Upgrade iniciado`)
+        console.log(`Upgrade iniciado`)
 
         const db = request.result
         const store = db.createObjectStore('ingressos', {
@@ -414,18 +416,22 @@ export default {
           unique: false,
         })
 
-        alert(`Upgrade encerrado`)
+        // alert(`Upgrade encerrado`)
       }
 
+      
+
       request.onsuccess = () => {
-        alert(`Sucesso iniciado`)
+        // alert(`Sucesso iniciado`)
+        console.log(`Sucesso iniciado`)
 
         var tourType = document.getElementById('form-stacked-select').value
         var ingInteiro = document.getElementById('inteira').value
         var ingMeia = document.getElementById('meia').value
         var ingPCD = document.getElementById('pcd').value
 
-        alert(`inteiro: ${ingInteiro} meia: ${ingMeia} pcd: ${ingPCD}`)
+        // alert(`inteiro: ${ingInteiro} meia: ${ingMeia} pcd: ${ingPCD}`)
+        console.log(`inteiro: ${ingInteiro} meia: ${ingMeia} pcd: ${ingPCD}`)
 
         const db = request.result
         const transaction = db.transaction('ingressos', 'readwrite')
@@ -433,7 +439,7 @@ export default {
         const store = transaction.objectStore('ingressos')
 
         // store.put({ tipo: tipo, tour: tour, preco: preco });
-        if (ingInteiro > 0) {
+        /*if (ingInteiro > 0) {
           store.put({
             tipo: 'Inteiro',
             tour: tourType,
@@ -459,9 +465,17 @@ export default {
             quantidade: ingPCD,
             pago: false,
           })
-        }
+        }*/
+        store.put({
+          inteiro: ingInteiro,
+          meia: ingMeia,
+          pcd: ingPCD,
+          tour: tourType,
+          pago: false
+        })
 
-        alert(`Sucesso encerrado`)
+        // alert(`Sucesso encerrado`)
+        console.log(`Sucesso encerrado`)
       }
     },
   },
