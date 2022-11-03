@@ -3,7 +3,8 @@ import cors from 'cors'
 
 const app = express()
 
-const { sequelize } = require('../models')
+import { sequelize } from '../models/index.js'
+// const { sequelize } = require('../models')
 
 app.use(cors())
 app.use(express.json())
@@ -28,9 +29,10 @@ app.get('/api/login', (req, res) => {
 })
 
 app.post('/api/login', (req, res) => {
-        const dadosLogin = req.body
+        let email = req.body.email
+        let password = req.body.password
         console.log(dadosLogin)
-        listaLogin.push(dadosLogin)
+        listaLogin.push([email, password])
         res.send('Login adicionado com sucesso!')
 })
 
