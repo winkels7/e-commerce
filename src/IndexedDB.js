@@ -43,25 +43,12 @@ function IndexedDB(event) {
         request.onsuccess = () => {
                 alert(`Sucesso iniciado`)
 
-                var tourType = document.getElementById('form-stacked-select').value
+                var tourType = document.getElementById(
+                        'form-stacked-select'
+                ).value
                 var ingInteiro = document.getElementById('inteira').value
                 var ingMeia = document.getElementById('meia').value
                 var ingPCD = document.getElementById('pcd').value
-
-                var quant = ingInteiro + ingMeia + ingPCD
-                var array = []
-
-                for (var y = 0; y < ingInteiro; y++) {
-                    array[y] = ingInteiro
-                }
-
-                for (y = 0 + ingInteiro; y < ingInteiro + ingMeia; y++) {
-                    array[y] = ingMeia
-                }
-
-                for (y = ingInteiro + ingPCD; y < quant; y++) {
-                    array[y] = ingPCD
-                }
 
                 const db = request.result
                 const transaction = db.transaction('ingressos', 'readwrite')
@@ -69,13 +56,32 @@ function IndexedDB(event) {
                 const store = transaction.objectStore('ingressos')
 
                 // store.put({ tipo: tipo, tour: tour, preco: preco });
-                for (var x = 0; x < quant; x++) {
-                    store.put({
-                            tipo: 'tipo',
-                            tour: tourType,
-                            preco: 'preco',
-                            pago: false,
-                    })
+                if (ingInteiro > 0) {
+                        store.put({
+                                tipo: 'Inteiro',
+                                tour: tourType,
+                                preco: inteiro,
+                                quantidade: ingInteiro,
+                                pago: false,
+                        })
+                }
+                if (ingMeia > 0) {
+                        store.put({
+                                tipo: 'Meia',
+                                tour: tourType,
+                                preco: meio,
+                                quantidade: ingMeia,
+                                pago: false,
+                        })
+                }
+                if (ingPCD > 0) {
+                        store.put({
+                                tipo: 'PCD',
+                                tour: tourType,
+                                preco: meio,
+                                quantidade: ingPCD,
+                                pago: false,
+                        })
                 }
 
                 alert(`Sucesso encerrado`)
