@@ -15,13 +15,16 @@ Com diversas atrações e diversão garantida para toda a familia.</p>
 
     <ul class="uk-slideshow-items">
         <li>
-            <img src="../assets/back.jpg" alt="" uk-cover>
+            <img src="../assets/pexels-george-pak-7968305.jpg" alt="" uk-cover>
         </li>
         <li>
-            <img src="../assets/back.jpg" alt="" uk-cover>
+            <img src="../assets/pexels-isaw-company-1124079.jpg" alt="" uk-cover>
         </li>
         <li>
-            <img src="../assets/back.jpg" alt="" uk-cover>
+            <img src="../assets/pexels-riccardo-69903.jpg" alt="" uk-cover>
+        </li>
+        <li>
+            <img src="../assets/pexels-te-lensfix-1371360.jpg" alt="" uk-cover>
         </li>
     </ul>
 
@@ -71,7 +74,7 @@ Com diversas atrações e diversão garantida para toda a familia.</p>
                 <img src="../assets/Icone-ticket-Png-removebg-preview (1).png" alt="ticket" width="100">
             </div>
             <button class="uk-button uk-button-text uk-margin-small-bottom">Comprar</button>
-        <input class="uk-input uk-form-width-xsmall uk-border-pill uk-margin-small-left uk-margin-small-bottom uk-box-shadow-small" type="number" value=1 min="1" >
+        <input class="uk-input uk-form-width-xsmall uk-border-pill uk-margin-small-left uk-margin-small-bottom uk-box-shadow-small" type="number" value=0 min="0" >
         </div>
     </div>
 
@@ -83,7 +86,7 @@ Com diversas atrações e diversão garantida para toda a familia.</p>
                 <img src="../assets/Icone-ticket-Png-removebg-preview (1).png" alt="ticket" width="100">
             </div>
         <button class="uk-button uk-button-text uk-margin-small-bottom">Comprar</button>
-        <input class="uk-input uk-form-width-xsmall uk-border-pill uk-margin-small-left uk-margin-small-bottom uk-box-shadow-small" type="number" value=1 min="1" >
+        <input class="uk-input uk-form-width-xsmall uk-border-pill uk-margin-small-left uk-margin-small-bottom uk-box-shadow-small" type="number" value=0 min="0" >
         </div>
     </div>
 
@@ -95,7 +98,7 @@ Com diversas atrações e diversão garantida para toda a familia.</p>
                 <img src="../assets/Icone-ticket-Png-removebg-preview (1).png" alt="ticket" width="100">
             </div>
             <button class="uk-button uk-button-text uk-margin-small-bottom">Comprar</button>
-        <input class="uk-input uk-form-width-xsmall uk-border-pill uk-margin-small-left uk-margin-small-bottom uk-box-shadow-small" type="number" value=1 min="1">
+        <input class="uk-input uk-form-width-xsmall uk-border-pill uk-margin-small-left uk-margin-small-bottom uk-box-shadow-small" type="number" value=0 min="0">
         </div>
     </div>
 
