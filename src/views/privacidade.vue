@@ -1,5 +1,5 @@
 <template>
-  <div class="uk-container uk-width-1-1 uk-flex uk-margin-medium-top">
+  <div class="uk-container uk-width-1-1 uk-flex uk-margin-medium-top uk-margin-medium-bottom">
         <div class="uk-margin-medium-right">
                 <ul class="uk-list uk-width-medium uk-background-primary uk-padding-small uk-border-rounded">
                     <li><RouterLink to="/privacidade" class="uk-button uk-button-text">Política de Privacidade</RouterLink></li>
