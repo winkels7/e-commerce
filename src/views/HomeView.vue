@@ -11,7 +11,7 @@
         <p class="uk-text-muted">Venha conhecer nosso parque! <br>
 Com diversas atrações e diversão garantida para toda a familia.</p>
     </div>
-       <div class="uk-position-relative uk-visible-toggle uk-light uk-width-1-3 uk-margin-medium-top" tabindex="-1" uk-slideshow="autoplay: true min-height: 300; max-height: 500; width: 300; animation: push">
+       <div class="uk-position-relative uk-visible-toggle uk-light uk-width-1-3 uk-margin-medium-top" tabindex="-1" uk-slideshow="autoplay: true min-height: 300; max-height: 700; width: 300; animation: push">
 
     <ul class="uk-slideshow-items">
         <li>
@@ -33,7 +33,75 @@ Com diversas atrações e diversão garantida para toda a familia.</p>
     </div>    
     </div>
 
-    <div class="uk-container-xlarge uk-background-secondary">
+    <div class="uk-container-large uk-background-secondary uk-flex uk-flex-center">
+
+        <div class="uk-container-xlarge uk-background-muted uk-width-3-4 uk-height-large uk-margin-large-top uk-border-rounded uk-box-shadow-large uk-flex">
+            <form class="uk-margin-large-left uk-margin-medium-top ">
+                <h1>Compre seu Ingresso</h1>
+                <hr class="uk-divider-small">
+
+                    <div class="uk-margin uk-margin-medium-top">
+                        <div class="uk-inline">
+                            <label class="uk-form-label">Data da Reserva</label>
+                            <div class="uk-form-controls">
+                            <input class="uk-input uk-form-width-medium" type="date" aria-label="Not clickable icon">
+                            </div>   
+                        </div>
+                    </div>
+
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="form-stacked-select">Tour</label>
+                            <div class="uk-form-controls">
+                                <select class="uk-select uk-form-width-medium" id="form-stacked-select">
+                                    <option>Histórico</option>
+                                    <option>Amanhecer</option>
+                                    <option>Educacional</option>
+                                </select>
+                            </div>
+                        
+                </div>
+                
+            </form>        
+            <div class="uk-width-1-3@s uk-grid-colapse" uk-grid>
+    <div>
+        <div class="uk-card uk-card-default uk-card-small uk-card-body uk-postion-relative">
+            <h3 class="uk-card-title">Inteira</h3>
+            <p class="uk-left">R$ 12,00</p>
+            <div class="uk-position-absolute uk-position-medium uk-position-center-right">
+                <img src="../assets/Icone-ticket-Png-removebg-preview (1).png" alt="ticket" width="100">
+            </div>
+        <a href="#" class="uk-button uk-button-text">Comprar</a>
+        <input class="uk-input uk-form-width-xsmall uk-border-pill uk-margin-small-left" type="number" name="" id="">
+        </div>
+    </div>
+
+    <div>
+        <div class="uk-card uk-card-default uk-card-small uk-card-body uk-postion-relative">
+            <h3 class="uk-card-title">Meia-Entrada</h3>
+            <p class="uk-left">R$ 6,00</p>
+            <div class="uk-position-absolute uk-position-medium uk-position-center-right">
+                <img src="../assets/Icone-ticket-Png-removebg-preview (1).png" alt="ticket" width="100">
+            </div>
+        <a href="#" class="uk-button uk-button-text">Comprar</a>
+        </div>
+    </div>
+
+    <div>
+        <div class="uk-card uk-card-default uk-card-small uk-card-body uk-postion-relative">
+            <h3 class="uk-card-title">PCDs</h3>
+            <p class="uk-left">R$ 6,00</p>
+            <div class="uk-position-absolute uk-position-medium uk-position-center-right">
+                <img src="../assets/Icone-ticket-Png-removebg-preview (1).png" alt="ticket" width="100">
+            </div>
+        <a href="#" class="uk-button uk-button-text">Comprar</a>
+        </div>
+    </div>
+
+ 
+   
+
+    </div>
+        </div>
 
     </div>
 </template>
