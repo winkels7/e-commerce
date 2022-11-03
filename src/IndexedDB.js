@@ -1,3 +1,4 @@
+/* 
 function IndexedDB(event) {
         // o importante é o que importa //
         alert(`Entrou na função`)
@@ -86,4 +87,5 @@ function IndexedDB(event) {
 
                 alert(`Sucesso encerrado`)
         }
-}
+} 
+*/
