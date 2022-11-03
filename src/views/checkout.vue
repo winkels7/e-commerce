@@ -91,6 +91,7 @@
             mostrarCarrinho() */
             mounted() {
                 alert('entrou')
+                // var everything = require('./HomeView.vue')
 
                 var transaction = db.transaction('ingressos', 'readonly')
                 
@@ -104,15 +105,15 @@
                 
                 // objectStore.orderBy(Key)
                 //const request = objectStore.get('ingressos')
-                var request = objectStore.getAll()
+                var request2 = objectStore.getAll()
 
-                request.onsuccess = (event) => {
+                request2.onsuccess = (event) => {
                     let eventTarget = ev.target
                     // alert(`${eventTarget}`)
                     console.log(`${eventTarget}`)
                 }
 
-                request.onerror = (event) => {
+                request2.onerror = (event) => {
                     // alert(`Falha ao buscar informações no banco de dados`)
                     console.log(`Falha ao buscar informações no banco de dados`)
                 }
