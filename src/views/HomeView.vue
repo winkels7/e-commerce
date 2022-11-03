@@ -64,7 +64,9 @@ Com diversas atrações e diversão garantida para toda a familia.</p>
                             </div>
                         
                 </div>
-                
+
+                <button class="uk-button uk-button-primary uk-margin-small-bottom uk-margin-medium-top">Comprar</button>
+
             </form> 
             <!-- tipo do ingresso -->       
             <div class="uk-flex uk-flex-column uk-width-1-3 uk-margin-xlarge-left ">
@@ -75,8 +77,7 @@ Com diversas atrações e diversão garantida para toda a familia.</p>
             <div class="uk-position-absolute uk-position-medium uk-position-center-right">
                 <img src="../assets/Icone-ticket-Png-removebg-preview (1).png" alt="ticket" width="100">
             </div>
-            <button class="uk-button uk-button-text uk-margin-small-bottom">Comprar</button>
-        <input id="inteira" class="uk-input uk-form-width-xsmall uk-border-pill uk-margin-small-left uk-margin-small-bottom uk-box-shadow-small" type="number" value=0 min="0" >
+        <input id="inteira" class="uk-input uk-form-width-xsmall uk-border-pill  uk-margin-small-bottom uk-box-shadow-small" type="number" value=0 min="0" >
         </div>
     </div>
 
@@ -88,8 +89,7 @@ Com diversas atrações e diversão garantida para toda a familia.</p>
             <div class="uk-position-absolute uk-position-medium uk-position-center-right">
                 <img src="../assets/Icone-ticket-Png-removebg-preview (1).png" alt="ticket" width="100">
             </div>
-        <button class="uk-button uk-button-text uk-margin-small-bottom">Comprar</button>
-        <input id="meia" class="uk-input uk-form-width-xsmall uk-border-pill uk-margin-small-left uk-margin-small-bottom uk-box-shadow-small" type="number" value=0 min="0" >
+        <input id="meia" class="uk-input uk-form-width-xsmall uk-border-pill  uk-margin-small-bottom uk-box-shadow-small" type="number" value=0 min="0" >
         </div>
     </div>
 
@@ -100,8 +100,7 @@ Com diversas atrações e diversão garantida para toda a familia.</p>
             <div class="uk-position-absolute uk-position-medium uk-position-center-right">
                 <img src="../assets/Icone-ticket-Png-removebg-preview (1).png" alt="ticket" width="100">
             </div>
-            <button class="uk-button uk-button-text uk-margin-small-bottom">Comprar</button>
-        <input id="pcd" class="uk-input uk-form-width-xsmall uk-border-pill uk-margin-small-left uk-margin-small-bottom uk-box-shadow-small" type="number" value=0 min="0">
+        <input id="pcd" class="uk-input uk-form-width-xsmall uk-border-pill  uk-margin-small-bottom uk-box-shadow-small" type="number" value=0 min="0">
         </div>
     </div>
 
