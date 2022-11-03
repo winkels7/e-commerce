@@ -1,4 +1,4 @@
-const ingresso = (dequelize, DataTypes) => {
+const ingresso = (sequelize, DataTypes) => {
 
     const Ingresso = sequelize.define('Ingresso', {
         preço: {
