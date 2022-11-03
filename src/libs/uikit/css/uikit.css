@@ -7767,11 +7767,10 @@ iframe[data-uk-cover] {
   }
 }
 /* Desktop and smaller */
-@media (max-width: 1599px) {
   .uk-background-image\@xl {
     background-image:linear-gradient(rgba(100, 115, 47, 0.592), rgba(100, 115, 47, 0.663)), url(../../../assets/back.jpg) !important;
   }
-}
+
 /* Blend modes
  ========================================================================== */
 .uk-background-blend-multiply {

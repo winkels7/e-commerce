@@ -282,7 +282,7 @@
   </div>
 
 
-<div class="uk-flex uk-flex-center uk-margin-medium-top uk-margin-bottom " uk-slider>
+<div class="uk-flex uk-flex-center uk-margin-medium-top uk-margin-large-bottom " uk-slider>
   <article
     class="uk-comment uk-comment-primary uk-margin-large-top uk-width-1-3 uk-box-shadow-small uk-box-shadow-hover-large "
     role="comment"

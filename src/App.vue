@@ -28,7 +28,7 @@
         
         <RouterView />
 
-        <div class="uk-container-small uk-background-primary uk-margin-large-top uk-flex uk-flex-between">
+        <div class="uk-container-small uk-background-primary  uk-flex uk-flex-between">
               
                 <div class="uk-margin-top uk-margin-medium-left">
                         <h3 class="uk-text-muted">Políticas</h3>
