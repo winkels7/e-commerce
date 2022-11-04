@@ -18,3 +18,4 @@ async function connect() {
     //guardando para usar sempre o mesmo
     global.connection = pool;
     return pool.connect();
+} module.exports = database
