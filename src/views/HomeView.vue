@@ -6,10 +6,10 @@
       <div class="uk-margin-medium-top">
         <h1 class="uk-text-muted">Parque das Palmeiras</h1>
         <hr class="uk-divider-small" />
-        <h4 class="uk-text-muted">
+        <p class="uk-text-muted">
           Venha conhecer nosso parque! <br />
-          Com diversas atrações e diversão garantida para toda a família.
-        </h4>
+          Com diversas atrações e diversão garantida para toda a familia.
+        </p>
       </div>
       <div
         class="uk-position-relative uk-visible-toggle uk-light uk-width-1-3 uk-margin-medium-top"
@@ -68,7 +68,6 @@
       <form class="uk-margin-large-left uk-margin-medium-top">
         <h1>Compre seu Ingresso</h1>
         <hr class="uk-divider-small" />
-        
 
         <div class="uk-margin uk-margin-medium-top">
           <div class="uk-inline">
@@ -99,39 +98,63 @@
         </div>
 
         <div class="uk-flex uk-flex-column">
-        <a
-        onclick="UIkit.notification({message:'<span uk-icon=\'icon: check\'></span> Produto adicionado no carrinho!'})"
-          @click="IndexedDB()"
-          class="uk-button uk-button-secondary uk-margin-small-bottom uk-margin-small-top uk-border-rounded"
-        >
-          Adicionar no Carrinho
-        </a>
+          <a
+            onclick="UIkit.notification({message:'<span uk-icon=\'icon: check\'></span> Produto adicionado no carrinho!'})"
+            @click="IndexedDB()"
+            class="uk-button uk-button-secondary uk-margin-small-bottom uk-margin-small-top uk-border-rounded"
+          >
+            Adicionar no Carrinho
+          </a>
 
-        <a class="uk-button uk-button-secondary uk-button-small uk-border-rounded" type="button" uk-toggle="target: #offcanvas-push">+ Informações</a>
+          <a
+            class="uk-button uk-button-secondary uk-button-small uk-border-rounded"
+            type="button"
+            uk-toggle="target: #offcanvas-push"
+            >+ Informações</a
+          >
 
-        <div id="offcanvas-push" uk-offcanvas="mode: reveal; overlay: true">
-    <div class="uk-offcanvas-bar">
+          <div id="offcanvas-push" uk-offcanvas="mode: reveal; overlay: true">
+            <div class="uk-offcanvas-bar">
+              <button
+                class="uk-offcanvas-close"
+                type="button"
+                uk-close
+              ></button>
 
-        <button class="uk-offcanvas-close" type="button" uk-close></button>
+              <h3>LEI DA MEIA ENTRADA</h3>
 
-        <h3>LEI DA MEIA ENTRADA</h3>
+              <p>
+                A meia entrada é regulamentada pela Lei nº 12.933/2013, que
+                dispõe sobre o acesso a eventos culturais, esportivos e de
+                entretenimento.
+              </p>
 
-        <p>A meia entrada é regulamentada pela Lei nº 12.933/2013, que dispõe sobre o acesso a eventos culturais, esportivos e de entretenimento.</p>
-        
-        <p>De acordo com a lei, são considerados beneficiários da meia entrada:</p>
+              <p>
+                De acordo com a lei, são considerados beneficiários da meia
+                entrada:
+              </p>
 
-        <p>– Estudantes: com comprovante de matrícula e identidade estudantil;</p>
+              <p>
+                – Estudantes: com comprovante de matrícula e identidade
+                estudantil;
+              </p>
 
-        <p>– Professores: com comprovante de identificação funcional;</p>
-    
-        <p>– Pessoas com deficiência: com comprovante de identidade funcional ou cartão deBeneficiário do INSS;</p>
+              <p>– Professores: com comprovante de identificação funcional;</p>
 
-        <p>– Jovens de baixa renda: com comprovante de inscrição no Cadastro Único para Programas Sociais do Governo Federal (CadÚnico) ou no Cadastro Único para Programas Sociais do Governo Estadual e do Município (CadÚnico-SE/MG);</p>
-    
-    </div>
-</div>
-    </div>
+              <p>
+                – Pessoas com deficiência: com comprovante de identidade
+                funcional ou cartão deBeneficiário do INSS;
+              </p>
 
+              <p>
+                – Jovens de baixa renda: com comprovante de inscrição no
+                Cadastro Único para Programas Sociais do Governo Federal
+                (CadÚnico) ou no Cadastro Único para Programas Sociais do
+                Governo Estadual e do Município (CadÚnico-SE/MG);
+              </p>
+            </div>
+          </div>
+        </div>
       </form>
       <!-- tipo do ingresso -->
       <div class="uk-flex uk-flex-column uk-width-1-3 uk-margin-xlarge-left">
@@ -270,223 +293,107 @@
 
       <div class="uk-article uk-width-1-2">
         <h1>Produtos</h1>
-        <hr class="uk-divider-small">
+        <hr class="uk-divider-small" />
         <p class="uk-text-default">
-          Vocês possuem lembrancinhas? <br />Não se preocupe, temos
+          Você deseja algumas lembrancinhas? <br />Não se preocupe, temos
           diversos produtos no nosso parque como: camisetas, copos
-          personalizados, ecobags e muito mais!! <br>
+          personalizados, ecobags e muito mais!! <br />
           Venha nos visitar!!
         </p>
       </div>
     </div>
   </div>
 
-
-<div class="uk-flex uk-flex-center uk-margin-medium-top uk-margin-large-bottom " uk-slider>
-  <article
-    class="uk-comment uk-comment-primary uk-margin-large-top uk-width-1-3 uk-box-shadow-small uk-box-shadow-hover-large "
-    role="comment"
+  <div
+    class="uk-flex uk-flex-center uk-margin-medium-top uk-margin-large-bottom"
+    uk-slider
   >
-    <header class="uk-comment-header">
-      <div class="uk-grid-medium uk-flex-middle" uk-grid>
-        <div class="uk-width-auto">
-          <img
-            class="uk-comment-avatar uk-border-rounded"
-            src="../assets/author2.jpg"
-            width="100"
-            height="200"
-            alt="author"
-          />
+    <article
+      class="uk-comment uk-comment-primary uk-margin-large-top uk-width-1-3 uk-box-shadow-small uk-box-shadow-hover-large"
+      role="comment"
+    >
+      <header class="uk-comment-header">
+        <div class="uk-grid-medium uk-flex-middle" uk-grid>
+          <div class="uk-width-auto">
+            <img
+              class="uk-comment-avatar uk-border-rounded"
+              src="../assets/author2.jpg"
+              width="100"
+              height="200"
+              alt="author"
+            />
+          </div>
+          <div class="uk-width-expand">
+            <h4 class="uk-comment-title uk-margin-remove">
+              <div class="uk-link-reset" href="#">Marcio Costa</div>
+            </h4>
+            <ul
+              class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top"
+            >
+              <li>12 dias atrás</li>
+            </ul>
+          </div>
         </div>
-        <div class="uk-width-expand">
-          <h4 class="uk-comment-title uk-margin-remove">
-            <div class="uk-link-reset" href="#">Marcio Costa</div>
-          </h4>
-          <ul
-            class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top"
-          >
-            <li>12 dias atrás</li>
-          </ul>
-        </div>
+      </header>
+      <div class="uk-comment-body">
+        <p>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+          rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+          ipsum dolor sit amet.
+        </p>
       </div>
-    </header>
-    <div class="uk-comment-body">
-      <p>
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-        voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-        amet.
-      </p>
-    </div>
-  </article>
+    </article>
 
-  <article
-    class="uk-comment uk-comment-primary uk-margin-large-top uk-width-1-3 uk-margin-medium-left uk-box-shadow-small uk-box-shadow-hover-large"
-    role="comment"
-  >
-    <header class="uk-comment-header">
-      <div class="uk-grid-medium uk-flex-middle" uk-grid>
-        <div class="uk-width-auto">
-          <img
-            class="uk-comment-avatar uk-border-rounded"
-            src="../assets/author3.jpg"
-            width="100"
-            height="200"
-            alt="author"
-          />
+    <article
+      class="uk-comment uk-comment-primary uk-margin-large-top uk-width-1-3 uk-margin-medium-left uk-box-shadow-small uk-box-shadow-hover-large"
+      role="comment"
+    >
+      <header class="uk-comment-header">
+        <div class="uk-grid-medium uk-flex-middle" uk-grid>
+          <div class="uk-width-auto">
+            <img
+              class="uk-comment-avatar uk-border-rounded"
+              src="../assets/author3.jpg"
+              width="100"
+              height="200"
+              alt="author"
+            />
+          </div>
+          <div class="uk-width-expand">
+            <h4 class="uk-comment-title uk-margin-remove">
+              <div class="uk-link-reset" href="#">Alana Souza da Costa</div>
+            </h4>
+            <ul
+              class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top"
+            >
+              <li>20 dias atrás</li>
+            </ul>
+          </div>
         </div>
-        <div class="uk-width-expand">
-          <h4 class="uk-comment-title uk-margin-remove">
-            <div class="uk-link-reset" href="#">Alana Souza da Costa</div>
-          </h4>
-          <ul
-            class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top"
-          >
-            <li>20 dias atrás</li>
-          </ul>
-        </div>
+      </header>
+      <div class="uk-comment-body">
+        <p>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+          rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+          ipsum dolor sit amet.
+        </p>
       </div>
-    </header>
-    <div class="uk-comment-body">
-      <p>
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-        voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-        amet.
-      </p>
-    </div>
-  </article>
-</div>
+    </article>
+  </div>
 </template>
 
-
 <script>
-
+import obj from '../IndexedDB'
 
 export default {
-
-    
   methods: {
-
-    
     IndexedDB() {
-      // o importante é o que importa //
-      // alert(`Entrou na função`)
-      console.log(`Entrou na função`)
-
-      // teste de compatibilidade
-      const indexedDB =
-        window.indexedDB ||
-        window.mozIndexedDB ||
-        window.webkitIndexedDB ||
-        window.msIndexedDB ||
-        window.shimIndexedDB
-
-      const request = indexedDB.open('parquePalmeiras', 2)
-
-      var inteiro = 12
-      var meio = 6
-
-      request.onerror = (event) => {
-        alert(`Erro iniciado`)
-
-        console.error('Um erro ocorreu com IndexedDB')
-        console.error(event)
-
-        alert(`Erro encerrado`)
-      }
-
-      request.onupgradeneeded = () => {
-        // alert(`Upgrade iniciado`)
-        console.log(`Upgrade iniciado`)
-
-        const db = request.result
-        const store = db.createObjectStore('ingressos', {
-          autoIncrement: true,
-        })
-        /*store.createIndex('ingresso_tipo', ['tipo'], {
-          unique: false,
-        })*/
-        store.createIndex('ingresso_tour', ['tour'], {
-          unique: false,
-        })
-        /*store.createIndex('ingresso_preco', ['preco'], {
-          unique: false,
-        })*/
-        store.createIndex('ingresso_pago', ['pago'], {
-          unique: false,
-        })
-
-        // alert(`Upgrade encerrado`)
-      }
-
-      request.onsuccess = () => {
-        // alert(`Sucesso iniciado`)
-        console.log(`Sucesso iniciado`)
-
-        var tourType = document.getElementById('form-stacked-select').value
-        var ingInteiro = document.getElementById('inteira').value
-        var ingMeia = document.getElementById('meia').value
-        var ingPCD = document.getElementById('pcd').value
-
-        // alert(`inteiro: ${ingInteiro} meia: ${ingMeia} pcd: ${ingPCD}`)
-        console.log(`inteiro: ${ingInteiro} meia: ${ingMeia} pcd: ${ingPCD}`)
-
-        const db = request.result
-        const transaction = db.transaction('ingressos', 'readwrite')
-
-        const store = transaction.objectStore('ingressos')
-
-        // store.put({ tipo: tipo, tour: tour, preco: preco });
-        /*if (ingInteiro > 0) {
-          store.put({
-            tipo: 'Inteiro',
-            tour: tourType,
-            preco: inteiro,
-            quantidade: ingInteiro,
-            pago: false,
-          })
-        }
-        if (ingMeia > 0) {
-          store.put({
-            tipo: 'Meia',
-            tour: tourType,
-            preco: meio,
-            quantidade: ingMeia,
-            pago: false,
-          })
-        }
-        if (ingPCD > 0) {
-          store.put({
-            tipo: 'PCD',
-            tour: tourType,
-            preco: meio,
-            quantidade: ingPCD,
-            pago: false,
-          })
-        }*/
-        store.put({
-          inteiro: ingInteiro,
-          meia: ingMeia,
-          pcd: ingPCD,
-          tour: tourType,
-          precoInt: inteiro,
-          precoMei: meio,
-          pago: false
-        })
-
-        // alert(`Sucesso encerrado`)
-        console.log(`Sucesso encerrado`)
-      }
+      return obj.IndexedDB()
     },
   },
-
-  
 }
-
-
-
-
 </script>
