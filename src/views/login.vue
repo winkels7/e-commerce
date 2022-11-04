@@ -1,21 +1,20 @@
 
 <template>
-<div>
-  <h1>login page</h1>
-  <li><RouterLink to="/register">register</RouterLink></li>
-  <a class="uk-button uk-button-default" href="#modal-center" uk-toggle>Recuperar senha</a>
+<div class="uk-container-large uk-flex uk-flex-column uk-background-image@s uk-background-cover">
+  <div class="uk-flex uk-flex-column uk-width-1-2 uk-margin-auto uk-margin-xlarge-top">
+  <h1 class="uk-text-center uk-text-muted">Faça seu Login</h1>
+  <hr class="uk-divider-icon">
+ 
+  <modal/>
+  <registrar/>
 
-<div id="modal-center" class="uk-flex-top" uk-modal>
-    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
-
-        <button class="uk-modal-close-default" type="button" uk-close></button>
-      <label >email
-         <input type="email" placeholder="informe o email">
-        </label>
-    </div>
 </div>
 </div>
+
 </template>
 
-<script>
+<script setup>
+import modal from "../components/modal.vue"
+import registrar from "../components/registrar.vue"
 </script>
+

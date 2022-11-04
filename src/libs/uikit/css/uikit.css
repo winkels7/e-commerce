@@ -7749,17 +7749,15 @@ iframe[data-uk-cover] {
 /* Image
  ========================================================================== */
 /* Phone portrait and smaller */
-@media (max-width: 639px) {
   .uk-background-image\@s {
-    background-image: none !important;
+    background-image:linear-gradient(rgba(100, 115, 47, 0.592), rgba(100, 115, 47, 0.663)), url(../../../assets/back-login2.jpg) !important;
   }
-}
+
 /* Phone landscape and smaller */
-@media (max-width: 959px) {
   .uk-background-image\@m {
-    background-image: none !important;
+    background-image:linear-gradient(rgba(100, 115, 47, 0.592), rgba(100, 115, 47, 0.663)), url(../../../assets/back-login.jpg) !important;
   }
-}
+
 /* Tablet landscape and smaller */
 @media (max-width: 1199px) {
   .uk-background-image\@l {
