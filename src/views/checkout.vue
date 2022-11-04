@@ -83,13 +83,14 @@
 </template>
 
 <script>
-    export default {
+    //export default {
         /*created: function () {
             this.mostrarCarrinho()
         },
         methods: {
             mostrarCarrinho() */
-            mounted() {
+
+            /*mounted() {
                 alert('entrou')
                 // var everything = require('./HomeView.vue')
 
@@ -142,7 +143,8 @@
                         console.log(`Produto: Entrada PCD<br>Quantidade: ${quantPcd}<br>Tour: ${tour}`)
                     }
                 }*/
-            }
-        }
+            //}
+
+        //}
     /*}*/
 </script>
