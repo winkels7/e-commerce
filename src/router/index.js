@@ -6,6 +6,7 @@ import checkout from "../views/checkout.vue"
 import user from "../views/user.vue"
 import privacidade from "../views/privacidade.vue"
 import cookies from "../views/cookies.vue"
+import institucional from "../views/institucional.vue"
 
 
 const router = createRouter({
@@ -54,6 +55,11 @@ const router = createRouter({
             name:"cookies",
             component:cookies
         },
+        {
+            path:"/institucional",
+            name:"institucional",
+            component:institucional
+        }
         
     ],
 });

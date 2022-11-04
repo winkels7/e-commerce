@@ -33,7 +33,12 @@ a,
     padding: 0 2rem;
   }
 } */
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 
+*{
+  font-family: 'Abel', sans-serif;
+
+}
 
 ::-webkit-scrollbar{
   width: 10px;

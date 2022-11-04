@@ -33,7 +33,8 @@
                         <h3 class="uk-text-muted">Políticas</h3>
                         <ul class="uk-text-muted uk-list">
                           <RouterLink to="/privacidade" class="uk-link-heading"><li>Políticas de Privacidade</li></RouterLink>
-                          <RouterLink to="/cookies" class="uk-link-heading"><li>Política de cookies</li> </RouterLink>   
+                          <RouterLink to="/cookies" class="uk-link-heading"><li>Política de cookies</li> </RouterLink>
+                          <RouterLink to="/institucional" class="uk-link-heading"><li>Institucional</li> </RouterLink>   
                         </ul>
                 </div>
 
