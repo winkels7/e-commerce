@@ -7,10 +7,10 @@
 // }
 
 ;(async () => {
-  const db = require('./database')
+  const database = require('./database')
   console.log('Começou!')
 
   console.log('SELECT * FROM usuarios')
-  const usuario = await db.getUsuario()
+  const usuario = await database.getUsuario()
   console.log(usuario)
 })()
