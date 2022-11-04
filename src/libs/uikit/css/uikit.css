@@ -83,7 +83,7 @@ strong {
  * Emphasize
  */
 em {
-  color: #f0506e;
+  color: #897878;
 }
 /*
  * Insert
@@ -1972,14 +1972,15 @@ select.uk-form-width-xsmall {
  * Primary
  */
 .uk-button-primary {
-  background-color: #1e87f0;
+  background-color: #64732F;
   color: #fff;
   border: 1px solid transparent;
 }
 /* Hover */
 .uk-button-primary:hover {
-  background-color: #0f7ae5;
-  color: #fff;
+  transition: 0.4s ease-in-out;
+  background-color: #CAD959;
+  color: rgb(0, 0, 0);
 }
 /* OnClick + Active */
 .uk-button-primary:active,

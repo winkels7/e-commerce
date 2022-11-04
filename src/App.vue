@@ -7,14 +7,13 @@
                         </div>
                         <div class="uk-navbar-right">
                                 <ul class="uk-navbar-nav uk-visible@m">
-                                        <li><RouterLink to="/">Home</RouterLink></li>
+                                        <li><RouterLink to="/" uk-icon="home"></RouterLink></li>
                                         <!-- <li><RouterLink to="/login">Login</RouterLink></li> -->
                                         <li><RouterLink to="/checkout" uk-icon="cart"></RouterLink></li>
                                         <!-- <li><RouterLink to="/user" uk-icon="user"></RouterLink></li> -->
-                                        <li><a uk-icon="user"></a>
+                                        <li><RouterLink to="/user" uk-icon="user"></RouterLink>
                                                 <div class="uk-navbar-dropdown">
                                                         <ul class="uk-nav uk-navbar-dropdown-nav">
-                                                                <li class="uk-active uk-margin-small-bottom"><RouterLink to="/user">Nome</RouterLink></li>
                                                                 <li><RouterLink to="/login"> <span class="uk-margin-small-right" uk-icon="sign-in"></span>Fazer login</RouterLink></li>
                                                                 <li><RouterLink to="/login"><span class="uk-margin-small-right" uk-icon="plus"></span>Criar conta</RouterLink></li>
                                                                 <li><a href="#"> <span class="uk-margin-small-right" uk-icon="sign-out"></span>Sair</a></li>
