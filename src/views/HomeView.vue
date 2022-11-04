@@ -6,10 +6,10 @@
       <div class="uk-margin-medium-top">
         <h1 class="uk-text-muted">Parque das Palmeiras</h1>
         <hr class="uk-divider-small" />
-        <p class="uk-text-muted">
+        <h4 class="uk-text-muted">
           Venha conhecer nosso parque! <br />
-          Com diversas atrações e diversão garantida para toda a familia.
-        </p>
+          Com diversas atrações e diversão garantida para toda a família.
+        </h4>
       </div>
       <div
         class="uk-position-relative uk-visible-toggle uk-light uk-width-1-3 uk-margin-medium-top"
@@ -272,7 +272,7 @@
         <h1>Produtos</h1>
         <hr class="uk-divider-small">
         <p class="uk-text-default">
-          Você deseja algumas lembrancinhas? <br />Não se preocupe, temos
+          Vocês possuem lembrancinhas? <br />Não se preocupe, temos
           diversos produtos no nosso parque como: camisetas, copos
           personalizados, ecobags e muito mais!! <br>
           Venha nos visitar!!
