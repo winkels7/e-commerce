@@ -71,7 +71,12 @@
     </div>
 
     </div>
+    
     <button class="uk-button uk-button-primary uk-margin-small-right uk-border-rounded uk-margin-medium-bottom uk-margin-medium-top" type="button" uk-toggle="target: #modal-example">Finalizar Pedido</button>
+
+    <!--src="https://stc.pagseguro.uol.com.br/public/img/botoes/pagamentos/209x48-pagar-azul-assina.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+    </form>-->
+    
     <a class="uk-button uk-button-secondary uk-border-rounded" onclick="window.print()"> <span class="uk-margin-small-right" uk-icon="print"></span>Imprimir</a>
    
     <div id="modal-example" uk-modal>
@@ -101,70 +106,3 @@
     
   </div>
 </template>
-
-<script>
-    //export default {
-        /*created: function () {
-            this.mostrarCarrinho()
-        },
-        methods: {
-            mostrarCarrinho() */
-
-            /*mounted() {
-                alert('entrou')
-                // var everything = require('./HomeView.vue')
-
-                var transaction = db.transaction('ingressos', 'readonly')
-                
-                transaction.oncomplete = (event) => {
-                    // wut
-                    // alert(`transação completa`)
-                    console.log(`transação completa`)
-                };
-
-                var objectStore = transaction.objectStore('ingressos')
-                
-                // objectStore.orderBy(Key)
-                //const request = objectStore.get('ingressos')
-                var request2 = objectStore.getAll()
-
-                request2.onsuccess = (event) => {
-                    let eventTarget = ev.target
-                    // alert(`${eventTarget}`)
-                    console.log(`${eventTarget}`)
-                }
-
-                request2.onerror = (event) => {
-                    // alert(`Falha ao buscar informações no banco de dados`)
-                    console.log(`Falha ao buscar informações no banco de dados`)
-                }
-
-                /////////////////////////////////////////////////
-                /*
-                var quantInteiro = request.result.inteiro
-                var quantMeia = request.result.meia
-                var quantPcd = request.result.pcd
-                var precoInteiro = request.result.precoInt
-                var precoMei = request.result.precoMei
-                var tour = request.result.tour
-
-                /*request.onerror = (event) => {
-                    alert(`Falha ao buscar informações no banco de dados`)
-                }*/
-                /*
-                request.onsuccess = (event) => {
-                    if(quantInteiro > 0 ) {
-                        console.log(`Produto: Entrada inteira<br>Quantidade: ${quantInteiro}<br>Tour: ${tour}`)
-                    }
-                    if(quantMeia > 0) {
-                        console.log(`Produto: Meia entrada<br>Quantidade: ${quantMeia}<br>Tour: ${tour}`)
-                    }
-                    if(quantPcd > 0) {
-                        console.log(`Produto: Entrada PCD<br>Quantidade: ${quantPcd}<br>Tour: ${tour}`)
-                    }
-                }*/
-            //}
-
-        //}
-    /*}*/
-</script>
