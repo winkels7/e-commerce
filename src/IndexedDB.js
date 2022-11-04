@@ -80,6 +80,7 @@ export default {
         dataaO: dataTlg,
         pago: false,
       })
+      // store.push
 
       // alert(`Sucesso encerrado`)
       console.log(`Sucesso encerrado`)

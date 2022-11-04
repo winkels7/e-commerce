@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="module">
+        import StorageTable from '../views/controllers/Storage.controller.mjs'
+        const $storage = new StorageTable()
+
+        $storage.criarTable({
+            nome: 'ingressos',
+            items: [
+                { nome: 'ingresso_tour', chaves: ['tour'], params: { unique: false } },
+                { nome: 'ingresso_pago', chaves: ['pago'], params: { unique: false } },
+            ]
+        })
+    </script>
+</body>
+</html>
