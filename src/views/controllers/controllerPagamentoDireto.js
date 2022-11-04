@@ -14,3 +14,27 @@ $.ajax({
         //process the JSON data etc
     }
 }) */
+const PagSeguro = require('pagseguro-api');
+
+const pag = await PagSeguro();
+pag.referencia = "BRL0123"; // Idenficador da cobrança
+pag.Descricao("Cobrança por Boleto");
+pag.Boleto({ // Informações do Pagador
+  nome: "",
+  cpf: "", 
+  email: "", 
+  endereco: {
+    rua: "",
+    rua : "",
+    numero : "",
+    bairro : "",
+    cidade : "",
+    estado : "",
+    uf : "",
+    cep : "",
+    pais : "BR"
+  }
+});
+
+// O valor fornecido deve ser em centavos.
+const cobranca = await pag.Cobrar(10000); 
