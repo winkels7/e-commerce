@@ -1,5 +1,5 @@
 <template>
-  <div class="uk-container-large uk-background-secondary uk-flex ">
+  <div class="uk-container-xlarge uk-background-secondary uk-background-image@m uk-background-cover uk-flex ">
 <div class="uk-container uk-container-large uk-background-primary uk-width-1-4 uk-margin-large-top  uk-border-rounded uk-box-shadow-large">
   <div class="uk-flex uk-flex-column">
           <div class="uk-flex">
@@ -23,17 +23,8 @@
             
 
             <div class="uk-text-muted uk-margin-small-right uk-width-1-1">
-            <a class="uk-link-heading" href="#excluir" ><span class="uk-margin-small-right" uk-icon="trash"></span>Excluir Conta</a>
-            <div id="excluir" uk-modal>
-    <div class="uk-modal-dialog uk-modal-body">
-        <h2 class="uk-modal-title">Headline</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p class="uk-text-right">
-            <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
-            <button class="uk-button uk-button-primary" type="button">Save</button>
-        </p>
-    </div>
-</div>
+            <!-- <a class="uk-link-heading" href="#modal-group-1" ><span class="uk-margin-small-right" uk-icon="trash"></span>Excluir Conta</a> -->
+              <excluir></excluir>
 
             <a class="uk-link-heading" ><span class="uk-margin-medium-left uk-margin-small-right" uk-icon="settings"></span>Editar Dados</a>
 
@@ -85,10 +76,14 @@
 </div>
 
 </div>
-<div class="uk-container uk-container-small uk-background-secondary">
+<div class="uk-container uk-container-xlarge uk-background-secondary uk-background-image@xl uk-background-cover">
     
   </div>
 
 
   
 </template>
+
+<script setup>
+import excluir from "../components/excluir.vue"
+</script>

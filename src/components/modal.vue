@@ -26,7 +26,7 @@
                   </div>
                   <div class="uk-flex uk-flex-column">
                   <a class="uk-text-secondary uk-button-text uk-text-center uk-link-heading" href="#modal-center" uk-toggle>Esqueci a senha</a>
-                  <a class="uk-text-secondary uk-button-text uk-text-center uk-link-heading uk-margin-small-top" href="#modal-sections" uk-toggle>Primeira vez aqui?<strong>Criar conta</strong></a>
+                  <a class="uk-text-secondary uk-button-text uk-text-center uk-link-heading uk-margin-small-top" href="#modal-sections" uk-toggle>Primeira vez aqui?<strong> Criar conta</strong></a>
                   </div>
                   <div id="modal-center" class="uk-modal-full" uk-modal>
                         <div class="uk-modal-dialog">
