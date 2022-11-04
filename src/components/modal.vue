@@ -6,7 +6,7 @@
     <div class="uk-modal-dialog">
         <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
         <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
-            <div class="uk-background-image@s uk-background-cover" uk-height-viewport></div>
+            <div class="uk-background-image@xl uk-background-cover" uk-height-viewport></div>
             <div class="uk-padding-large">
               <div class="uk-flex uk-flex-center">
               <form>
@@ -31,7 +31,7 @@
                   <div id="modal-center" class="uk-modal-full" uk-modal>
                         <div class="uk-modal-dialog">
                             <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
-                            <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+                            <div class="uk-grid-collapse uk-child-width-1-2@m uk-flex-middle" uk-grid>
                                 <div class="uk-background-cover uk-background-image@s" uk-height-viewport></div>
                                 <div class="uk-padding-large">
                                   <div class="uk-flex uk-flex-column">
