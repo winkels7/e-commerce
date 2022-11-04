@@ -35,15 +35,20 @@
                                 <div class="uk-background-cover uk-background-image@s" uk-height-viewport></div>
                                 <div class="uk-padding-large">
                                   <div class="uk-flex uk-flex-column">
-                                  <h3 class="uk-text-center">Recuperar senha</h3>
+                                  <h3 class="uk-text-center uk-margin-medium-bottom">Recuperar senha</h3>
                                   <div class="uk-inline">
                           <span class="uk-form-icon" uk-icon="icon: mail"></span>
                           <input class="uk-input uk-width-1-1" type="email" placeholder="Informe seu e-mail" aria-label="Not clickable icon">
+                                    
                         </div>
+                        <a class="uk-button uk-button-secondary uk-width-1-1 uk-margin-medium-top">Enviar</a>
+                        <a class="uk-text-secondary uk-button-text uk-text-center uk-link-heading uk-margin-small-top uk-width-1-3 uk-align-center" href="#modal-full" uk-toggle>voltar</a>
+
                       </div>                                
                     </div>
                             </div>
                         </div>
+                        
                     </div>
                             <a class="uk-button uk-button-secondary uk-width-1-1 uk-margin-small-top">Entrar</a>
 

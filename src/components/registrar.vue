@@ -43,12 +43,10 @@
                   </div>
 
                   <div class="uk-margin">
-                      <select class="uk-select uk-width-1-3" placeholder="Informe o sexo" aria-label="Select" required>
-                          <option selected>Gênero</option>
-                          <option value="1">Masculino</option>
-                          <option value="2">Feminino</option>
-                          <option value="3">Não especifico</option>
-                      </select>
+                    <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid uk-align-center">
+                        <label><input class="uk-radio" type="radio" name="radio2" checked> Masculino</label>
+                        <label><input class="uk-radio" type="radio" name="radio2"> Feminino</label>
+                    </div>
                   </div>
 
 
@@ -58,8 +56,10 @@
                           <input class="uk-input" type="tel" placeholder="Número de telefone" pattern="[+]{1}[0-9]{11,14}" required aria-label="Not clickable icon">
                       </div>
                   </div>
-                  <a class="uk-button uk-button-secondary uk-width-1-2 uk-margin-small-top">Cadastrar</a>
-
+                  <div class="uk-flex uk-flex-column">
+                  <a class="uk-button uk-button-secondary uk-width-1-3 uk-align-center uk-margin-small-top">Cadastrar</a>
+                  <a class="uk-text-secondary uk-button-text uk-text-center uk-link-heading uk-margin-small-top uk-width-1-3 uk-align-center" href="#modal-full" uk-toggle>voltar</a>
+                </div>
                 </form>
               </div>
                 </div>
