@@ -24,7 +24,6 @@ async function getUsuario() {
   const res = await client.query('SELECT * FROM tb_user')
   return res.rows
 }
-module.exports = { getUsuario }
 
 async function addUsuario(usuario) {
   const client = await connect()
@@ -40,4 +39,4 @@ async function addUsuario(usuario) {
   ]
   return await client.query(sql, values)
 }
-module.exports = { addUsuario }
+module.exports = { getUsuario, addUsuario }
