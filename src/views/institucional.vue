@@ -1,12 +1,13 @@
 <template>
   <div class="uk-container uk-width-1-1 uk-flex uk-margin-medium-top uk-margin-medium-bottom">
-        <div class="uk-margin-medium-right">
+        <!-- <div class="uk-margin-medium-right">
                <img src="../assets/Captura de tela de 2022-11-03 08-58-40.png" width="800" alt="">
-      </div>
+      </div> -->
+      <h1 class="uk-width-1-2 uk-article-title"> <a class="uk-link-reset">Sobre nós</a></h1>
       <div>
             <article class="uk-article">
 
-    <h1 class="uk-article-title"><a class="uk-link-reset" href="">Institucional</a></h1>
+    <h1 class="uk-article-title"><a class="uk-link-reset">Institucional</a></h1>
 
     <p class="uk-article-meta">Escrito por Parque das Palmeiras em 03 de Novembro 2022.</p>
 
@@ -18,6 +19,9 @@
 
     <p>Apenas retemos as informações coletadas pelo tempo necessário para fornecer o serviço solicitado. Quando armazenamos dados, protegemos dentro de meios comercialmente aceitáveis ​​para evitar perdas e roubos, bem como acesso, divulgação, cópia, uso ou modificação não autorizados.</p>
 
+    <div class="uk-margin-medium-right">
+               <img src="../assets/pexels-max-ravier-3436387.jpg" width="800" alt="">
+      </div>
     <p>Não compartilhamos informações de identificação pessoal publicamente ou com terceiros, exceto quando exigido por lei.</p>
 
     <p>O nosso site pode ter links para sites externos que não são operados por nós. Esteja ciente de que não temos controle sobre o conteúdo e práticas desses sites e não podemos aceitar responsabilidade por suas respectivas políticas de privacidade.</p>
