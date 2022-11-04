@@ -1,4 +1,4 @@
-async function connect() {
+async function database() {
     if (global.connection)
         return global.connection.connect();
 
@@ -19,3 +19,10 @@ async function connect() {
     global.connection = pool;
     return pool.connect();
 } module.exports = database
+
+async function getUsuario() {
+    const client = await connect();
+    const res = await client.query('SELECT * FROM usuarios WHERE email=$1');
+    const values = [email];
+    return res.rows;
+} module.exports = { getUsuario }
