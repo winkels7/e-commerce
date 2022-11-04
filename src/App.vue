@@ -16,7 +16,7 @@
                                                         <ul class="uk-nav uk-navbar-dropdown-nav">
                                                                 <li class="uk-active uk-margin-small-bottom"><RouterLink to="/user">Nome</RouterLink></li>
                                                                 <li><RouterLink to="/login"> <span class="uk-margin-small-right" uk-icon="sign-in"></span>Fazer login</RouterLink></li>
-                                                                <li><RouterLink to="/register"><span class="uk-margin-small-right" uk-icon="plus"></span>Criar conta</RouterLink></li>
+                                                                <li><RouterLink to="/login"><span class="uk-margin-small-right" uk-icon="plus"></span>Criar conta</RouterLink></li>
                                                                 <li><a href="#"> <span class="uk-margin-small-right" uk-icon="sign-out"></span>Sair</a></li>
                                                         </ul>
                                                 </div>
