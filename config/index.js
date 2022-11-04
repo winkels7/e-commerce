@@ -1,16 +1,12 @@
-// const db = require("./database");
+(async () => {
+  const database = require("./database");
+  console.log('Começou!');
+  
+  console.log('INSERT INTO CLIENTES');
+  const result = await database.addUsuario({id: 3, email: 'teste', senha: 'senhateste', nome: 'Zé', sexo: 18, cpf: '00011100023', tel: '5199438674'});
+  console.log(result.rowCount);
 
-// async function inserirUsuario(usuario){
-//     const client = await db();
-//     const sql = 'INSERT INTO usuarios (email, senha, nome, cpf)'
-//     const values = [usuario.email, usuario.senha, usuario.nome, usuario.cpf]
-// }
-
-;(async () => {
-  const database = require('./database')
-  console.log('Começou!')
-
-  console.log('SELECT * FROM usuarios')
-  const usuario = await database.getUsuario()
-  console.log(usuario)
-})()
+  console.log('SELECT * FROM CLIENTES');
+  const usuario = await database.getUsuario();
+  console.log(usuario);
+})();
