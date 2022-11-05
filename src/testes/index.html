@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nat going at it</title>
+    <p>Input 1</p>
+    <input id="id1" type="text">
+    <p>Input 2</p>
+    <input id="id2" type="text">
+    <p>Input 3</p>
+    <input id="id3" type="text">
 </head>
 <body>
     <script type="module">
@@ -13,9 +19,20 @@
 
         $storage.criarTable({
             nome: 'ingressos',
-            items: [
+            item: [
                 { nome: 'ingresso_tour', chaves: ['tour'], params: { unique: false } },
                 { nome: 'ingresso_pago', chaves: ['pago'], params: { unique: false } },
+            ]
+        })
+
+        $storage.popularTable({
+            nome: 'ingressos',
+            permissao: 'readwrite',
+            action: 'ingressos',
+            campos: [
+                { info: 1 },
+                { info: 2 },
+                { info: 3 }
             ]
         })
     </script>
