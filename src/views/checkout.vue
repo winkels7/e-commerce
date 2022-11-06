@@ -128,13 +128,26 @@
 </template>
 
 <script>
-import obj from '../IndexedDB'
+  import StorageTable from '../views/controllers/Storage.controller.mjs'
+  const $storage = new StorageTable()
 
-export default {
-  methods: {
-    IndexedDB() {
-      return obj.IndexedDB()
-    },
-  },
-}
+  $storage.criarTable({
+      nome: 'ingressos',
+      item: [
+        { nome: 'ingresso_chave', chaves: ['chave'], params: { unique: true}}
+      ]
+  })
+
+  $storage.popularTable({
+    nome: 'ingressos',
+    permissao: 'readwrite',
+    action: 'ingressos',
+    campos: [
+        { info: 'primeiro' },
+        { info: 'segundo' },
+        { info: 'terceiro' }
+    ]
+  })
+
+  document.getElementById('idR1').innerHTML = 'hello world'
 </script>

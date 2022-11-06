@@ -5,12 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nat going at it</title>
-    <p>Input 1</p>
+    <h1>Input 1</h1>
     <input id="id1" type="text">
-    <p>Input 2</p>
+    <h1>Input 2</h1>
     <input id="id2" type="text">
-    <p>Input 3</p>
+    <h1>Input 3</h1>
     <input id="id3" type="text">
+    <h1>Resultado 1</h1>
+    <div id="idR1"></div>
+    <h1>Resultado 2</h1>
+    <div id="idR2"></div>
+    <h1>Resultado 3</h1>
+    <div id="idR3"></div>
 </head>
 <body>
     <script type="module">
@@ -20,8 +26,9 @@
         $storage.criarTable({
             nome: 'ingressos',
             item: [
-                { nome: 'ingresso_tour', chaves: ['tour'], params: { unique: false } },
-                { nome: 'ingresso_pago', chaves: ['pago'], params: { unique: false } },
+                { nome: 'ingresso_chave', chaves: ['chave'], params: { unique: true}}
+                /*{ nome: 'ingresso_tour', chaves: ['tour'], params: { unique: false } },
+                { nome: 'ingresso_pago', chaves: ['pago'], params: { unique: false } },*/
             ]
         })
 
@@ -30,11 +37,13 @@
             permissao: 'readwrite',
             action: 'ingressos',
             campos: [
-                { info: 1 },
-                { info: 2 },
-                { info: 3 }
+                { info: 'primeiro' },
+                { info: 'segundo' },
+                { info: 'terceiro' }
             ]
         })
+
+        document.getElementById('idR1').innerHTML = 'hello world'
     </script>
 </body>
 </html>

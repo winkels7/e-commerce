@@ -40,12 +40,30 @@ export default class StorageTable {
 
       const store = transaction.objectStore(param.action)
 
+      store.clear()
+
+      console.warn(`clear() -> ${this.db.result}`)
+
       console.warn(`param.nome: ${param.nome} / param.permissao: ${param.permissao} / param.action: ${param.action}`)
       
       param.campos.forEach((campos) => {
         store.put(campos.info)
         console.warn(`campos.info: ${campos.info}`)
       })
+
+      const getAllRequest = store.getAll()
+
+      console.warn(getAllRequest)
+
+      getAllRequest.onsuccess = function() {
+        const array = getAllRequest.result
+
+        console.warn(array)
+
+        document.getElementById('idR1').innerHTML = array[0]
+        document.getElementById('idR2').innerHTML = array[1]
+        document.getElementById('idR3').innerHTML = array[2]
+      }
     }
   }
 }
