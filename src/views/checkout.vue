@@ -39,8 +39,8 @@
               </td>
               <td class="uk-table-link">
                 <a class="uk-link-reset" href="">
-                  <strong>Histórico</strong><br />
-                  Meia-Entrada</a
+                  <strong id="tourEsc">Histórico</strong><br />
+                  <span id="ingressoEsc">Meia-Entrada</span></a
                 >
               </td>
               <td class="uk-text-truncate">05/11/2022</td>
@@ -128,26 +128,12 @@
 </template>
 
 <script>
-  import StorageTable from '../views/controllers/Storage.controller.mjs'
-  const $storage = new StorageTable()
-
-  $storage.criarTable({
-      nome: 'ingressos',
-      item: [
-        { nome: 'ingresso_chave', chaves: ['chave'], params: { unique: true}}
-      ]
-  })
-
-  $storage.popularTable({
-    nome: 'ingressos',
-    permissao: 'readwrite',
-    action: 'ingressos',
-    campos: [
-        { info: 'primeiro' },
-        { info: 'segundo' },
-        { info: 'terceiro' }
-    ]
-  })
-
-  document.getElementById('idR1').innerHTML = 'hello world'
+import obj from '../IndexedDB'
+export default {
+  methods: {
+    IndexedDB() {
+      return obj.IndexedDB()
+    },
+  },
+}
 </script>
