@@ -1,6 +1,6 @@
 const database = require('../config/database')
 
-async function getCarrinho(email) {
+async function queryCarrinho(email) {
   const client = await database()
   const res = await client.query('SELECT carrinho FROM tb_carrinho WHERE email = $1', [email])
   return res.rows
@@ -16,4 +16,4 @@ async function addItem(email, item) {
   ]
   return await client.query(sql, values)
 }
-module.exports = { getCarrinho, addItem }
+module.exports = { queryCarrinho, addItem }

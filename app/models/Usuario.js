@@ -2,7 +2,10 @@ const database = require('../config/database')
 
 async function getUsuario(email) {
   const client = await database()
-  const res = await client.query('SELECT nome FROM tb_user WHERE email = $1', [email])
+  const res = await client.query('SELECT nome FROM tb_user WHERE email = $1', [
+    email,
+  ])
+  client.release()
   return res.rows
 }
 
@@ -18,6 +21,8 @@ async function addUsuario(usuario) {
     usuario.cpf,
     usuario.tel,
   ]
-  return await client.query(sql, values)
+  const res = await client.query(sql, values)
+  client.release()
+  return res
 }
 module.exports = { getUsuario, addUsuario }
