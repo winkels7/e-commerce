@@ -395,6 +395,14 @@
         </p>
       </div>
     </article>
+  
+  </div>
+
+  <div class="uk-flex uk-flex-center uk-margin-large-bottom uk-margin-large-top">
+    <div class="uk-flex uk-flex-column">
+    <h1 class="uk-text-center" data-aos="fade-right" data-aos-duration="1000">Como Chegar</h1>
+    <hr class="uk-divider-icon uk-text-center" data-aos="fade-left" data-aos-duration="2000">
+    <iframe data-aos="fade-down" data-aos-duration="1000" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3466.025640698292!2d-52.4573542849661!3d-29.69003628201257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951cbb5d74fd5c3d%3A0x205027b242283553!2sImply%20Tecnologia!5e0!3m2!1spt-BR!2sbr!4v1667835248173!5m2!1spt-BR!2sbr" width="800" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="uk-margin-large-bottom"></iframe>  </div>
   </div>
 </template>
 
