@@ -3,6 +3,7 @@ export default class StorageTable {
     this.db = null
     this.criarBanco()
     this.criarTable()
+    this.popularTable()
   }
 
   criarBanco(text = 'ingressos', versao = 2) {
@@ -47,9 +48,15 @@ export default class StorageTable {
       console.warn(`param.nome: ${param.nome} / param.permissao: ${param.permissao} / param.action: ${param.action}`)
       
       param.campos.forEach((campos) => {
-        store.put(campos.info)
+        store.add(campos.info)
         console.warn(`campos.info: ${campos.info}`)
       })
+
+      // const primeiroCampo = document.getElementById('id1').value
+
+      // store.add(primeiroCampo)
+      // store.add('segundo')
+      // store.add('terceiro')
 
       const getAllRequest = store.getAll()
 

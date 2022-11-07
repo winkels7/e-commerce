@@ -135,6 +135,7 @@
 
 <script>
 import obj from '../IndexedDB'
+
 export default {
   methods: {
     IndexedDB() {
@@ -142,4 +143,26 @@ export default {
     },
   },
 }
+/* import StorageTable from './controllers/Checkout.controller.mjs'
+  const $storage = new StorageTable()
+
+  $storage.criarTable({
+      nome: 'ingressos',
+      item: [
+          { nome: 'ingresso_chave', chaves: ['chave'], params: { unique: true } }
+      ]
+  })
+
+  $storage.popularTable({
+      nome: 'ingressos',
+      permissao: 'readwrite',
+      action: 'ingressos',
+      campos: [
+          { info: 'primeiro' },
+          { info: 'segundo' },
+          { info: 'terceiro' }
+      ]
+  })
+
+  document.getElementById('tourEsc').innerHTML = 'hello world' */
 </script>
