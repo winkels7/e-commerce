@@ -69,8 +69,7 @@
   >
     <div
       class="uk-container-xlarge uk-background-muted uk-width-3-4 uk-height-large uk-margin-large-top uk-border-rounded uk-box-shadow-large uk-flex"
-      data-aos="fade-right"
-      data-aos-duration="1000"
+    
       >
       <form class="uk-margin-large-left uk-margin-medium-top">
         <h1>Compre seu Ingresso</h1>
@@ -120,7 +119,7 @@
             >+ Informações</a
           >
 
-          <div id="offcanvas-push" uk-offcanvas="mode: reveal; overlay: true">
+          <div id="offcanvas-push" uk-offcanvas="mode: reveal; overlay: true" >
             <div class="uk-offcanvas-bar">
               <button
                 class="uk-offcanvas-close"
