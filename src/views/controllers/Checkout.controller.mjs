@@ -30,7 +30,7 @@ export default class StorageTable {
           store.createIndex(item.nome, item.chaves, item.params)
         })
       }
-      
+
       console.warn('Tabela criada com sucesso')
     }
   
@@ -43,7 +43,7 @@ export default class StorageTable {
   
         const store = transaction.objectStore(param.action)
   
-        // store.clear()
+        store.clear()
   
         console.warn(`clear() -> ${this.db.result}`)
   
@@ -70,8 +70,13 @@ export default class StorageTable {
           console.warn(array)
   
           document.getElementById('tourEsc').innerHTML = array[0]
-          document.getElementById('idR2').innerHTML = array[1]
-          document.getElementById('idR3').innerHTML = array[2]
+          document.getElementById('ingressoEsc').innerHTML = array[1]
+          document.getElementById('dataEsc').innerHTML = array[2]
+          document.getElementById('precoEsc').innerHTML = array[3]
+          document.getElementById('quantEsc').innerHTML = array[4]
+          document.getElementById('subtotalEsc').innerHTML = array[5]
+          document.getElementById('totalValorEsc').innerHTML = array[6]
+          document.getElementById('subtotalValorEsc').innerHTML = array[7]
         }
       }
     }

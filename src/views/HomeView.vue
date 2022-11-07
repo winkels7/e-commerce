@@ -418,7 +418,6 @@
 
 <script>
 import obj from '../IndexedDB'
-
 export default {
   methods: {
     IndexedDB() {
