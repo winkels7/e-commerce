@@ -68,6 +68,10 @@ export default class StorageTable {
           const array = getAllRequest.result
   
           console.warn(array)
+
+          const maisLinhas = '<td><input class="uk-checkbox" type="checkbox" aria-label="Checkbox" /></td><td><img class="uk-preserve-width uk-border-circle" src="../assets/Icone-ticket-Png-removebg-preview (1).png" width="40" height="40" alt="" /></td><td class="uk-table-link"><a class="uk-link-reset" href=""><strong id="tourEsc">Histórico</strong><br /><span id="ingressoEsc">Meia-Entrada</span></a></td><td id="dataEsc" class="uk-text-truncate">05/11/2022</td><td id="precoEsc" class="uk-text-nowrap">R$ 6,00</td><td id="quantEsc" class="uk-text-nowrap uk-text-center">1</td>'
+
+          document.getElementById('segundaLinha').innerHTML = maisLinhas
   
           document.getElementById('tourEsc').innerHTML = array[0]
           document.getElementById('ingressoEsc').innerHTML = array[1]
