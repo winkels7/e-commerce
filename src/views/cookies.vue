@@ -7,7 +7,7 @@
                 </ul>
       </div>
       <div>
-            <article class="uk-article">
+            <article class="uk-article uk-text-justify">
 
     <h1 class="uk-article-title"><a class="uk-link-reset" href="">Política de Cookies Parque das Palmeiras</a></h1>
 

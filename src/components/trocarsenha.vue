@@ -13,7 +13,7 @@
             <div class="uk-margin">
                     <div class="uk-inline">
                         <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: lock"></span>
-                        <input class="uk-input" type="password" aria-label="Not clickable icon">
+                        <input class="uk-input" type="password" placeholder="Senha" aria-label="Not clickable icon">
                     </div>
                 </div>
            </label>
@@ -23,7 +23,7 @@
             <div class="uk-margin">
                     <div class="uk-inline">
                         <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: lock"></span>
-                        <input class="uk-input" type="password" aria-label="Not clickable icon">
+                        <input class="uk-input" type="password" placeholder="Senha" aria-label="Not clickable icon">
                     </div>
                 </div>
            </label>

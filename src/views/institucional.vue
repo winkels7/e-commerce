@@ -1,5 +1,5 @@
 <template>
-  <div class="uk-container uk-width-1-1 uk-flex uk-margin-medium-top uk-margin-medium-bottom">
+  <div class="uk-container uk-width-1-1 uk-flex uk-margin-medium-top uk-margin-medium-bottom uk-text-justify">
         <!-- <div class="uk-margin-medium-right">
                <img src="../assets/Captura de tela de 2022-11-03 08-58-40.png" width="800" alt="">
       </div> -->
