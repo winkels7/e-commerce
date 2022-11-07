@@ -6,23 +6,9 @@ import bodyParser from 'body-parser'
 
 const app = express()
 
-try {
-  var connectionString = 'postgres://sttwtuig@babar.db.elephantsql.com/sttwtuig'
-  var config = parse(connectionString)
-  config.password = 'EMHTfQ4XXOIAkrM1f9pPMifuheoJ_26C'
-  var dbcon = pgp(config)
-  app.set('dbCon', dbcon)
-} catch (error) {
-  console.log(`DB error: ${error} `)
-}
-
 app.use(cors())
 app.use(express.json())
 app.use(bodyParser.json())
-
-// sequelize.sync().then(() => {
-//     console.log('conectado com o banco de dados.')
-// })
 
 app.get('/api/', (req, res) => {
   // abra no navegador o link http://localhost:3000/api
@@ -33,7 +19,6 @@ app.get('/api/', (req, res) => {
   res.send(request)
 })
 
-const listaLogin = []
 
 app.get('/api/login', (req, res) => {
   res.send(listaLogin)

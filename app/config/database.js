@@ -7,7 +7,7 @@ async function database() {
       'postgres://sttwtuig:EMHTfQ4XXOIAkrM1f9pPMifuheoJ_26C@babar.db.elephantsql.com/sttwtuig',
   })
   const client = await pool.connect()
-  console.log('Criou pool de conexões no PostgreSQL!')
+  console.log('Conexão com ElephantSQL OK!')
 
   const res = await client.query('SELECT NOW()')
   console.log(res.rows[0])

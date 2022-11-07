@@ -1,9 +1,9 @@
 //no terminal: 'node testeDB.js'
 ;(async () => {
-  const modelUsuario = require('../models/Usuario')
+  const UsuarioCtrl = require('../controllers/UsuarioCtrl')
   console.log('Começou!')
-
+  const email_usuario = {email: 'teste@teste.com'}
   console.log('SELECT * FROM usuarios')
-  const usuario = await modelUsuario.getUsuario()
+  const usuario = await UsuarioCtrl.getUsuario(email_usuario)
   console.log(usuario)
 })()

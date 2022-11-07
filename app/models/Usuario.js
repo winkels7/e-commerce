@@ -1,8 +1,8 @@
 const database = require('../config/database')
 
-async function getUsuario() {
+async function getUsuario(email) {
   const client = await database()
-  const res = await client.query('SELECT * FROM tb_user')
+  const res = await client.query('SELECT nome FROM tb_user WHERE email = $1', [email])
   return res.rows
 }
 
