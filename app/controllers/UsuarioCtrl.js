@@ -17,7 +17,7 @@ const login = async (req, res) => {
 const registrar = async (req, res) => {
   const usuario = req.body
   console.log(usuario)
-  Usuario.addUsuario(usuario)
+  const resposta = await Usuario.addUsuario(usuario)
   res.send('addUsuario OK')
 }
 module.exports = { login, registrar }
