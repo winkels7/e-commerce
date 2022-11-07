@@ -1,5 +1,5 @@
 <template>
-  <div
+  <div id="app"
     class="uk-container-large uk-background-secondary uk-flex uk-flex-around"
   >
     <div
@@ -42,13 +42,13 @@
               </td>
               <td class="uk-table-link">
                 <a class="uk-link-reset" href="">
-                  <strong id="tourEsc">Histórico</strong><br />
-                  <span id="ingressoEsc">Meia-Entrada</span></a
+                  <strong id="tourEsc">{{ tour }}</strong><br />
+                  <span id="ingressoEsc">{{ inteira }}</span></a
                 >
               </td>
-              <td id="dataEsc" class="uk-text-truncate">05/11/2022</td>
-              <td id="precoEsc" class="uk-text-nowrap">R$ 6,00</td>
-              <td id="quantEsc" class="uk-text-nowrap uk-text-center">1</td>
+              <td id="dataEsc" class="uk-text-truncate">{{ calendario }}</td>
+              <td id="precoEsc" class="uk-text-nowrap">{{ preco }}</td>
+              <td id="quantEsc" class="uk-text-nowrap uk-text-center">{{ quant }}</td>
             </tr>
           </tbody>
           <!---->
@@ -148,46 +148,35 @@
 </template>
 
 <script>
-import StorageTable from './controllers/Checkout.controller.mjs'
-import hello from './HomeView.vue'
+/*import StorageTable from './controllers/Checkout.controller.mjs'
 
 const $storage = new StorageTable()
 
-  $storage.criarTable({
-    nome: 'ingressos',
-    item: [
-      { nome: 'ingresso_chave', chaves: ['chave'], params: { unique: true } }
-    ]
-  })
+$storage.popularTable({
+  id: 'tourEsc',
+  posicao: 0
+})*/
 
-  $storage.popularTable({
-    nome: 'ingressos',
-    permissao: 'readwrite',
-    action: 'ingressos',
-    campos: [
-      { info: 'hello tour' },
-      { info: 'hello ingresso' },
-      { info: 'hello dia' },
-      { info: 'hello preço' },
-      { info: 'hello quantidade' },
-      { info: 'hello subtotal' },
-      { info: 'hello valor total' },
-      { info: 'hello valor subtotal' }
-    ]
-  })
 
-/*export default {
-  data() {
-    return {
-      tour: 'aaa',
-      ingresso: 'aaa',
-      dia: 'aaa',
-      preco: 'aaa',
-      quant: 'aaa',
-      subtotal: 'aaa',
-      totalValor: 'aaa',
-      subtotalValor: 'aaa'
-    };
-  },
-};*/
+/*
+const getAllRequest = store.getAll()
+
+console.warn(getAllRequest)
+
+getAllRequest.onsuccess = function() {
+  const array = getAllRequest.result
+
+  console.warn(array)
+
+  // const maisLinhas = '<td><input class="uk-checkbox" type="checkbox" aria-label="Checkbox" /></td><td><img class="uk-preserve-width uk-border-circle" src="../assets/Icone-ticket-Png-removebg-preview (1).png" width="40" height="40" alt="ticket"/></td><td class="uk-table-link"><a class="uk-link-reset" href=""><strong class="tourEsc">Histórico</strong><br /><span id="ingresso2Esc">Meia-Entrada</span></a></td><td class="uk-text-truncate dataEsc">05/11/2022</td><td id="preco2Esc" class="uk-text-nowrap">R$ 6,00</td><td id="quant2Esc" class="uk-text-nowrap uk-text-center">1</td>'
+
+  // document.getElementById('segundaLinha').innerHTML = maisLinhas
+  // document.getElementById('terceiraLinha').innerHTML = maisLinhas
+
+  // data = 0
+  // tour = 1
+  // inteira = 2
+  // meia = 3
+  // pcd = 4
+} */
 </script>
