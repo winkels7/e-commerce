@@ -1,5 +1,6 @@
 <template>
-
+        <PageloaderVue></PageloaderVue>
+        
         <div class="uk-container uk-container-expand uk-background-primary">
                 <nav class="uk-navbar " uk-navbar>
                         <div class="uk-navbar-left" >
@@ -57,7 +58,7 @@ import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
 import modal from "./components/modal.vue"
 import registrar from "./components/registrar.vue"
-
+import PageloaderVue from './components/Pageloader.vue'
 
 
 </script>
