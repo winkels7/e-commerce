@@ -1,4 +1,4 @@
-import express from 'express'
+const express = require('express')
 
 const routes = express.Router();
 
@@ -8,7 +8,7 @@ const CarrinhoCtrl = require('../controllers/CarrinhoCtrl')
 
 routes.post('/login', UsuarioCtrl.login)
 routes.post('/cadastro', UsuarioCtrl.registrar)
-routers.post('/getcarrinho', CarrinhoCtrl.getCarrinho)
-routers.post('./setcarrinho', CarrinhoCtrl.setCarrinho)
+routes.post('/getcarrinho', CarrinhoCtrl.getCarrinho)
+routes.post('./setcarrinho', CarrinhoCtrl.setCarrinho)
 
-module.exports = router
+module.exports = routes
