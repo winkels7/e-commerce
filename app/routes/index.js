@@ -6,4 +6,8 @@ import UsuarioRota from "./UsuarioRota";
 
 const routes = express.Router();
 
+//controladores
+const UsuarioCtrl = require('../controllers/UsuarioCtrl')
+
+
 routes.post('/login')
