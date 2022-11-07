@@ -72,10 +72,13 @@
     
       >
       <form class="uk-margin-large-left uk-margin-medium-top">
-        <h1>Compre seu Ingresso</h1>
+        <h1 data-aos="fade-right"
+            data-aos-duration="1000">Compre seu Ingresso</h1>
         <hr class="uk-divider-small" />
 
-        <div class="uk-margin uk-margin-medium-top">
+        <div class="uk-margin uk-margin-medium-top" 
+        data-aos="fade-down"
+            data-aos-duration="1000">
           <div class="uk-inline">
             <label class="uk-form-label">Data da Reserva</label>
             <div class="uk-form-controls">
@@ -89,7 +92,8 @@
         </div>
 
         <!-- tipo do tour -->
-        <div class="uk-margin">
+        <div class="uk-margin" data-aos="fade-down"
+            data-aos-duration="1000">
           <label class="uk-form-label" for="form-stacked-select">Tour</label>
           <div class="uk-form-controls">
             <select
@@ -167,6 +171,8 @@
         <div>
           <div
             class="uk-card uk-card-default uk-card-small uk-height-small uk-card-body"
+            data-aos="fade-right"
+            data-aos-duration="1000"
           >
             <h4>Inteira</h4>
             <p class="uk-left uk-margin-small-bottom">R$ 12,00</p>
@@ -193,6 +199,8 @@
         <div>
           <div
             class="uk-card uk-card-default uk-card-small uk-height-small uk-card-body uk-postion-relative"
+            data-aos="fade-right"
+            data-aos-duration="1000"
           >
             <h4>Meia-Entrada</h4>
             <p class="uk-left uk-margin-small-bottom">R$ 6,00</p>
@@ -218,6 +226,8 @@
         <div>
           <div
             class="uk-card uk-card-default uk-card-small uk-height-small uk-card-body uk-postion-relative"
+            data-aos="fade-right"
+            data-aos-duration="1000"
           >
             <h4>PCDs</h4>
             <p class="uk-left uk-margin-small-bottom">R$ 6,00</p>
