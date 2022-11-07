@@ -42,15 +42,29 @@
               </td>
               <td class="uk-table-link">
                 <a class="uk-link-reset" href="">
-                  <strong id="tourEsc">Histórico</strong><br />
-                  <span id="ingressoEsc">Meia-Entrada</span></a
+                  <strong id="tourEsc">{{ tour }}</strong><br />
+                  <span id="ingressoEsc">{{ ingresso }}</span></a
                 >
               </td>
-              <td class="uk-text-truncate">05/11/2022</td>
-              <td class="uk-text-nowrap">R$ 6,00</td>
-              <td class="uk-text-nowrap uk-text-center">1</td>
+              <td id="dataEsc" class="uk-text-truncate">{{ dia }}</td>
+              <td id="precoEsc" class="uk-text-nowrap">R$ {{ preco }}</td>
+              <td id="quantEsc" class="uk-text-nowrap uk-text-center">{{ quant }}</td>
             </tr>
           </tbody>
+          <!---->
+          <tbody>
+            <tr id="segundaLinha">
+              <!-- conteúdo aqui se a pessoa escolher dois tipos diferentes de ingresso -->
+            </tr>
+          </tbody>
+          <!---->
+          <!---->
+          <tbody>
+            <tr id="terceiraLinha">
+              <!-- conteúdo aqui se a pessoa escolher três tipos diferentes de ingresso -->
+            </tr>
+          </tbody>
+          <!---->
         </table>
         <a class="uk-button uk-button-secondary uk-border-rounded">Remover</a>
       </div>
@@ -69,17 +83,17 @@
         </div>
 
         <div>
-          <p>R$ 0,00</p>
+          <p id="totalValorEsc">{{ totalValor }}</p>
         </div>
       </div>
 
       <div class="uk-flex uk-flex-between">
         <div>
-          <h4><em>Subtotal (1 item)</em></h4>
+          <h4><em id="subtotalEsc">{{ subtotal }}</em></h4>
         </div>
 
         <div>
-          <p class="uk-text-top">R$ 0,00</p>
+          <p id="subtotalValorEsc" class="uk-text-top">{{ subtotalValor }}</p>
         </div>
       </div>
 
@@ -134,7 +148,50 @@
 </template>
 
 <script>
-import obj from '../IndexedDB'
+import StorageTable from './controllers/Checkout.controller.mjs'
+
+const $storage = new StorageTable()
+
+  $storage.criarTable({
+    nome: 'ingressos',
+    item: [
+      { nome: 'ingresso_chave', chaves: ['chave'], params: { unique: true } }
+    ]
+  })
+
+  $storage.popularTable({
+    nome: 'ingressos',
+    permissao: 'readwrite',
+    action: 'ingressos',
+    campos: [
+      { info: 'hello tour' },
+      { info: 'hello ingresso' },
+      { info: 'hello dia' },
+      { info: 'hello preço' },
+      { info: 'hello quantidade' },
+      { info: 'hello subtotal' },
+      { info: 'hello valor total' },
+      { info: 'hello valor subtotal' }
+    ]
+  })
+
+  document.getElementById('tourEsc').innerHTML = 'hello world'
+
+export default {
+  data() {
+    return {
+      tour: 'aaa',
+      ingresso: 'aaa',
+      dia: 'aaa',
+      preco: 'aaa',
+      quant: 'aaa',
+      subtotal: 'aaa',
+      totalValor: 'aaa',
+      subtotalValor: 'aaa'
+    };
+  },
+};
+/* import obj from '../IndexedDB'
 
 export default {
   methods: {
@@ -142,27 +199,5 @@ export default {
       return obj.IndexedDB()
     },
   },
-}
-/* import StorageTable from './controllers/Checkout.controller.mjs'
-  const $storage = new StorageTable()
-
-  $storage.criarTable({
-      nome: 'ingressos',
-      item: [
-          { nome: 'ingresso_chave', chaves: ['chave'], params: { unique: true } }
-      ]
-  })
-
-  $storage.popularTable({
-      nome: 'ingressos',
-      permissao: 'readwrite',
-      action: 'ingressos',
-      campos: [
-          { info: 'primeiro' },
-          { info: 'segundo' },
-          { info: 'terceiro' }
-      ]
-  })
-
-  document.getElementById('tourEsc').innerHTML = 'hello world' */
+} */
 </script>
