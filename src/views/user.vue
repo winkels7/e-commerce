@@ -1,6 +1,10 @@
 <template>
   <div class="uk-container-xlarge uk-background-secondary uk-height-1-1 uk-background-image@xl uk-background-cover uk-background-default uk-flex ">
-<div class="uk-container uk-container-large uk-background-primary uk-width-1-4 uk-margin-medium-top  uk-border-rounded uk-box-shadow-large">
+    
+<div class="uk-container uk-container-large uk-background-primary uk-width-1-4 uk-margin-medium-top  uk-border-rounded uk-box-shadow-large"       
+data-aos="fade-right"
+data-aos-duration="1000"
+>
   <div class="uk-flex uk-flex-column">
           <div class="uk-flex">
         <span uk-icon="icon: user" width="80" class="uk-text-muted uk-margin-medium-top"></span>
@@ -40,7 +44,7 @@
   
 </div>
 
-<div class="uk-container uk-container-large uk-background-muted uk-width-1-2 uk-margin-medium-top uk-margin-medium-bottom uk-border-rounded uk-overflow-auto uk-box-shadow-large">
+<div class="uk-container uk-container-large uk-background-muted uk-width-1-2 uk-margin-medium-top uk-margin-medium-bottom uk-border-rounded uk-overflow-auto uk-box-shadow-large" data-aos="fade-left" data-aos-duration="1000">
 <h2 class="uk-margin-top"><em>Histórico de Compras</em></h2>
 <table class="uk-table uk-table-hover uk-table-middle uk-table-divider">
         <thead>

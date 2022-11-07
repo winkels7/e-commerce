@@ -4,7 +4,10 @@
   >
     <div
       class="uk-container uk-container-medium uk-background-muted uk-width-1-2 uk-margin-large-top uk-border-rounded uk-overflow-auto"
-    >
+      data-aos="fade-right"
+      data-aos-duration="1000"
+
+      >
       <h3 class="uk-margin-small-top">Produtos</h3>
       <hr class="uk-divider-small" />
       <div class="uk-overflow-auto">
@@ -54,7 +57,10 @@
     </div>
     <div
       class="uk-container uk-container-medium uk-background-muted uk-width-1-4 uk-margin-large-top uk-border-rounded"
-    >
+      data-aos="fade-left"
+      data-aos-duration="1000"
+
+      >
       <h3 class="uk-margin-small-top">Pedido</h3>
       <hr class="uk-divider-small" />
       <div class="uk-flex uk-flex-between">

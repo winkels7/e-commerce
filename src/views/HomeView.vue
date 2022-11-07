@@ -3,7 +3,10 @@
 <template>
   <div class="uk-background-image@xl uk-background-cover uk-container-xlarge">
     <div class="uk-flex uk-flex-around">
-      <div class="uk-margin-medium-top">
+      <div class="uk-margin-medium-top" 
+      data-aos="fade-right"
+      data-aos-duration="1000"
+      >
         <h1 class="uk-text-muted">Parque das Palmeiras</h1>
         <hr class="uk-divider-small" />
         <p class="uk-text-muted">
@@ -15,8 +18,10 @@
         class="uk-position-relative uk-visible-toggle uk-light uk-width-1-3 uk-margin-medium-top"
         tabindex="-1"
         uk-slideshow="autoplay: true min-height: 300; max-height: 700; width: 300; animation: push"
+        data-aos="fade-up"
+        data-aos-duration="1000"
       >
-        <ul class="uk-slideshow-items">
+        <ul class="uk-slideshow-items" >
           <li>
             <img
               src="../assets/pexels-george-pak-7968305.jpg"
@@ -64,7 +69,9 @@
   >
     <div
       class="uk-container-xlarge uk-background-muted uk-width-3-4 uk-height-large uk-margin-large-top uk-border-rounded uk-box-shadow-large uk-flex"
-    >
+      data-aos="fade-right"
+      data-aos-duration="1000"
+      >
       <form class="uk-margin-large-left uk-margin-medium-top">
         <h1>Compre seu Ingresso</h1>
         <hr class="uk-divider-small" />
@@ -245,6 +252,8 @@
         class="uk-position-relative uk-visible-toggle uk-light uk-width-1-3"
         tabindex="-1"
         uk-slideshow="autoplay: true min-height: 300; max-height: 700; width: 300; animation: push"
+        data-aos="fade-up"
+        data-aos-duration="1000"
       >
         <ul class="uk-slideshow-items">
           <li>
@@ -292,9 +301,9 @@
       </div>
 
       <div class="uk-article uk-width-1-2">
-        <h1>Produtos</h1>
+        <h1 data-aos="fade-up" data-aos-duration="1000">Produtos</h1>
         <hr class="uk-divider-small" />
-        <p class="uk-text-default">
+        <p class="uk-text-default" data-aos="fade-right">
           Você deseja algumas lembrancinhas? <br />Não se preocupe, temos
           diversos produtos no nosso parque como: camisetas, copos
           personalizados, ecobags e muito mais!! <br />
@@ -311,6 +320,8 @@
     <article
       class="uk-comment uk-comment-primary uk-margin-large-top uk-width-1-3 uk-box-shadow-small uk-box-shadow-hover-large"
       role="comment"
+      data-aos="fade-right"
+      data-aos-duration="1000"
     >
       <header class="uk-comment-header">
         <div class="uk-grid-medium uk-flex-middle" uk-grid>
@@ -349,6 +360,8 @@
     <article
       class="uk-comment uk-comment-primary uk-margin-large-top uk-width-1-3 uk-margin-medium-left uk-box-shadow-small uk-box-shadow-hover-large"
       role="comment"
+      data-aos="fade-left"
+      data-aos-duration="1000"
     >
       <header class="uk-comment-header">
         <div class="uk-grid-medium uk-flex-middle" uk-grid>
@@ -388,6 +401,7 @@
 
 <script>
 import obj from '../IndexedDB'
+
 
 export default {
   methods: {

@@ -2,8 +2,8 @@
 
         <div class="uk-container uk-container-expand uk-background-primary">
                 <nav class="uk-navbar " uk-navbar>
-                        <div class="uk-navbar-left">
-                            <RouterLink to="/"><img src="./assets/logo.png" class="uk-width-1-3" alt=""></RouterLink>
+                        <div class="uk-navbar-left" >
+                            <RouterLink to="/"><img src="./assets/logo.png" class="uk-width-1-3" alt="" ></RouterLink>
                         </div>
                         <div class="uk-navbar-right">
                                 <ul class="uk-navbar-nav uk-visible@m">
