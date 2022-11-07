@@ -149,6 +149,7 @@
 
 <script>
 import StorageTable from './controllers/Checkout.controller.mjs'
+import hello from './HomeView.vue'
 
 const $storage = new StorageTable()
 

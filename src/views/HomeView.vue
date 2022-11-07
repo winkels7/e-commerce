@@ -83,6 +83,7 @@
             <label class="uk-form-label">Data da Reserva</label>
             <div class="uk-form-controls">
               <input
+                id="ingData"
                 class="uk-input uk-form-width-medium"
                 type="date"
                 aria-label="Not clickable icon"
@@ -110,7 +111,7 @@
         <div class="uk-flex uk-flex-column">
           <a
             onclick="UIkit.notification({message:'<span uk-icon=\'icon: check\'></span> Produto adicionado no carrinho!'})"
-            @click="IndexedDB()"
+            @click="everything()"
             class="uk-button uk-button-secondary uk-margin-small-bottom uk-margin-small-top uk-border-rounded"
           >
             Adicionar no Carrinho
@@ -416,13 +417,38 @@
   </div>
 </template>
 
-<script>
-import obj from '../IndexedDB'
-export default {
+<script type="module">
+import StorageTable from './controllers/Checkout.controller.mjs'
+  const $storage = new StorageTable()
+
+    alert(`Entrou na função`)
+
+    $storage.criarTable({
+      nome: 'ingressos',
+      item: { nome: 'ingresso_chave', chaves: ['chave'], params: { unique: true } }
+    })
+
+    $storage.popularTable({
+      nome: 'ingressos',
+      permissao: 'readwrite',
+      action: 'ingressos',
+      campos: [
+        { info: 'hello tour' },
+        { info: 'hello ingresso' },
+        { info: 'hello dia' },
+        { info: 'hello preço' },
+        { info: 'hello quantidade' },
+        { info: 'hello subtotal' },
+        { info: 'hello valor total' },
+        { info: 'hello valor subtotal' }
+      ]
+    })
+/*export default {
   methods: {
     IndexedDB() {
       return obj.IndexedDB()
     },
   },
-}
+}*/
+// export let hello = 'world';
 </script>
