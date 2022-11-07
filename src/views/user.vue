@@ -1,6 +1,6 @@
 <template>
-  <div class="uk-container-xlarge uk-background-secondary uk-background-image@m uk-background-cover uk-flex ">
-<div class="uk-container uk-container-large uk-background-primary uk-width-1-4 uk-margin-large-top  uk-border-rounded uk-box-shadow-large">
+  <div class="uk-container-xlarge uk-background-secondary uk-height-1-1 uk-background-image@xl uk-background-cover uk-background-default uk-flex ">
+<div class="uk-container uk-container-large uk-background-primary uk-width-1-4 uk-margin-medium-top  uk-border-rounded uk-box-shadow-large">
   <div class="uk-flex uk-flex-column">
           <div class="uk-flex">
         <span uk-icon="icon: user" width="80" class="uk-text-muted uk-margin-medium-top"></span>
@@ -25,8 +25,8 @@
             <div class="uk-text-muted uk-margin-small-right uk-width-1-1">
             <!-- <a class="uk-link-heading" href="#modal-group-1" ><span class="uk-margin-small-right" uk-icon="trash"></span>Excluir Conta</a> -->
               <excluir></excluir>
-
-            <a class="uk-link-heading" ><span class="uk-margin-medium-left uk-margin-small-right" uk-icon="settings"></span>Editar Dados</a>
+              <senha></senha>
+            <!-- <a class="uk-link-heading" ><span class="uk-margin-medium-left uk-margin-small-right" uk-icon="settings"></span>Trocar Senha</a> -->
 
           </div>
 
@@ -40,7 +40,7 @@
   
 </div>
 
-<div class="uk-container uk-container-large uk-background-muted uk-width-1-2 uk-margin-large-top uk-border-rounded uk-overflow-auto uk-box-shadow-large">
+<div class="uk-container uk-container-large uk-background-muted uk-width-1-2 uk-margin-medium-top uk-margin-medium-bottom uk-border-rounded uk-overflow-auto uk-box-shadow-large">
 <h2 class="uk-margin-top"><em>Histórico de Compras</em></h2>
 <table class="uk-table uk-table-hover uk-table-middle uk-table-divider">
         <thead>
@@ -76,9 +76,9 @@
 </div>
 
 </div>
-<div class="uk-container uk-container-xlarge uk-background-secondary uk-background-image@xl uk-background-cover">
+<!-- <div class="uk-container uk-container-xlarge uk-background-secondary">
     
-  </div>
+  </div> -->
 
 
   
@@ -86,4 +86,5 @@
 
 <script setup>
 import excluir from "../components/excluir.vue"
+import senha from "../components/trocarsenha.vue"
 </script>

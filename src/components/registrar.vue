@@ -1,6 +1,6 @@
 <template>
   
-  <a class="uk-button uk-button-secondary uk-margin-small-top uk-border-rounded" href="#modal-sections" uk-toggle>Cadastrar-se</a>
+  <li><a class="" href="#modal-sections" uk-toggle><span class="uk-margin-small-right" uk-icon="plus"></span>Criar Conta</a></li>
 
   <div id="modal-sections" class="uk-modal-full" uk-modal>
                         <div class="uk-modal-dialog">

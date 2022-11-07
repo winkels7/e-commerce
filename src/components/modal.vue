@@ -1,7 +1,6 @@
 
 <template>
-<a class="uk-button uk-button-secondary uk-margin-small-top uk-border-rounded" href="#modal-full" uk-toggle>Entrar</a>
-
+<li><a class="" href="#modal-full" uk-toggle><span class="uk-margin-small-right" uk-icon="sign-in"></span>Entrar</a></li>
 <div id="modal-full" class="uk-modal-full" uk-modal>
     <div class="uk-modal-dialog">
         <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>

@@ -14,8 +14,10 @@
                                         <li><RouterLink to="/user" uk-icon="user"></RouterLink>
                                                 <div class="uk-navbar-dropdown">
                                                         <ul class="uk-nav uk-navbar-dropdown-nav">
-                                                                <li><RouterLink to="/login"> <span class="uk-margin-small-right" uk-icon="sign-in"></span>Fazer login</RouterLink></li>
-                                                                <li><RouterLink to="/login"><span class="uk-margin-small-right" uk-icon="plus"></span>Criar conta</RouterLink></li>
+                                                                <!-- <li><RouterLink to="/login"> <span class="uk-margin-small-right" uk-icon="sign-in"></span>Fazer login</RouterLink></li> -->
+                                                                <modal></modal>
+                                                                <!-- <li><RouterLink to="/login"><span class="uk-margin-small-right" uk-icon="plus"></span>Criar conta</RouterLink></li> -->
+                                                                <registrar></registrar>
                                                                 <li><a href="#"> <span class="uk-margin-small-right" uk-icon="sign-out"></span>Sair</a></li>
                                                         </ul>
                                                 </div>
@@ -54,7 +56,7 @@
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
 import modal from "./components/modal.vue"
-
+import registrar from "./components/registrar.vue"
 
 
 

@@ -1,8 +1,8 @@
 <template>
 
 <a class="uk-link-heading" href="#modal-excluir" uk-toggle><span class="uk-margin-small-right" uk-icon="trash"></span>Excluir Conta</a>
-<div id="modal-excluir" uk-modal>
-    <div class="uk-modal-dialog">
+<div id="modal-excluir" class="uk-flex-top" uk-modal>
+    <div class="uk-modal-dialog uk-margin-auto-vertical">
         <button class="uk-modal-close-default" type="button" uk-close></button>
         <div class="uk-modal-header">
             <h2 class="uk-modal-title">Excluir</h2>
