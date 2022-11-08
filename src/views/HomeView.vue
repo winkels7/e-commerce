@@ -423,9 +423,9 @@ import StorageTable from './controllers/Checkout.controller.mjs'
       return {
         calendario: '',
         tour: '',
-        inteira: '0',
-        meia: '0',
-        pcd: '0'
+        inteira: 0,
+        meia: 0,
+        pcd: 0
       }
     },
 

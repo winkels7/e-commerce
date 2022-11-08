@@ -54,31 +54,6 @@ export default class StorageTable {
           store.add(campos.info)
           console.warn(`campos.info: ${campos.info}`)
         })
-
-        /*const getAllRequest = store.getAll()
-
-        console.warn(getAllRequest)
-
-        getAllRequest.onsuccess = function() {
-            const array = getAllRequest.result
-
-            console.warn(array)
-
-            // const maisLinhas = '<td><input class="uk-checkbox" type="checkbox" aria-label="Checkbox" /></td><td><img class="uk-preserve-width uk-border-circle" src="../assets/Icone-ticket-Png-removebg-preview (1).png" width="40" height="40" alt="ticket"/></td><td class="uk-table-link"><a class="uk-link-reset" href=""><strong class="tourEsc">Histórico</strong><br /><span id="ingresso2Esc">Meia-Entrada</span></a></td><td class="uk-text-truncate dataEsc">05/11/2022</td><td id="preco2Esc" class="uk-text-nowrap">R$ 6,00</td><td id="quant2Esc" class="uk-text-nowrap uk-text-center">1</td>'
-
-            param.get.forEach((get) => {
-                document.getElementById(get.id).innerHTML = array[get.posicao]
-            })
-
-            // document.getElementById('segundaLinha').innerHTML = maisLinhas
-            // document.getElementById('terceiraLinha').innerHTML = maisLinhas
-
-            // data = 0
-            // tour = 1
-            // inteira = 2
-            // meia = 3
-            // pcd = 4
-        }*/
       }
     }
 }

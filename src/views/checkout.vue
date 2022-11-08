@@ -148,35 +148,136 @@
 </template>
 
 <script>
-/*import StorageTable from './controllers/Checkout.controller.mjs'
+const connection = indexedDB.open('ingressos', 2);
 
-const $storage = new StorageTable()
+connection.onsuccess = (event) => {
+  const database = event.target.result;
+  const transaction = database.transaction(['ingressos']);
+  const objectStore = transaction.objectStore('ingressos');
 
-$storage.popularTable({
-  id: 'tourEsc',
-  posicao: 0
-})*/
+  const request = objectStore.getAll()
 
+  request.onsuccess = (event) => {
+    const array = request.result
 
-/*
-const getAllRequest = store.getAll()
+    const calendario = array[0]
+    const tour = array[1]
+    const inteira = array[2]
+    const meia = array[3]
+    const pcd = array[4]
 
-console.warn(getAllRequest)
+    console.warn(`CALENDÁRIO: ${calendario}`)
+    console.warn(`TOUR: ${tour}`)
+    console.warn(`INTEIRA: ${inteira}`)
+    console.warn(`MEIA: ${meia}`)
+    console.warn(`PCD: ${pcd}`)
 
-getAllRequest.onsuccess = function() {
-  const array = getAllRequest.result
+    // const maisLinhas = '<td><input class="uk-checkbox" type="checkbox" aria-label="Checkbox" /></td><td><img class="uk-preserve-width uk-border-circle" src="../assets/Icone-ticket-Png-removebg-preview (1).png" width="40" height="40" alt="ticket"/></td><td class="uk-table-link"><a class="uk-link-reset" href=""><strong id="tour2Esc">Histórico</strong><br /><span id="ingresso2Esc">Meia-Entrada</span></a></td><td id="data2Esc" class="uk-text-truncate">05/11/2022</td><td id="preco2Esc" class="uk-text-nowrap">R$ 6,00</td><td id="quant2Esc" class="uk-text-nowrap uk-text-center">1</td>'
+    
+    const maisLinhas = '<tr><td><input class="uk-checkbox" type="checkbox" aria-label="Checkbox"/></td><td><img class="uk-preserve-width uk-border-circle" src="../assets/Icone-ticket-Png-removebg-preview (1).png" width="40" height="40" alt=""/></td><td class="uk-table-link"><a class="uk-link-reset" href=""><strong id="tour2Esc">{{ tour }}</strong><br /><span id="ingresso2Esc">{{ inteira }}</span></a></td><td id="data2Esc" class="uk-text-truncate">{{ calendario }}</td><td id="preco2Esc" class="uk-text-nowrap">{{ preco }}</td><td id="quant2Esc" class="uk-text-nowrap uk-text-center">{{ quant }}</td></tr>'
+    const mais3Linhas = '<td><input class="uk-checkbox" type="checkbox" aria-label="Checkbox"/></td><td><img class="uk-preserve-width uk-border-circle" src="../assets/Icone-ticket-Png-removebg-preview (1).png" width="40" height="40" alt=""/></td><td class="uk-table-link"><a class="uk-link-reset" href=""><strong id="tour3Esc">{{ tour }}</strong><br /><span id="ingresso3Esc">{{ inteira }}</span></a></td><td id="data3Esc" class="uk-text-truncate">{{ calendario }}</td><td id="preco3Esc" class="uk-text-nowrap">{{ preco }}</td><td id="quant3Esc" class="uk-text-nowrap uk-text-center">{{ quant }}</td>'
 
-  console.warn(array)
+    const valorTotal = (inteira*12) + (meia*6) + (pcd*6)
+    const quantTotal = inteira + meia + pcd
 
-  // const maisLinhas = '<td><input class="uk-checkbox" type="checkbox" aria-label="Checkbox" /></td><td><img class="uk-preserve-width uk-border-circle" src="../assets/Icone-ticket-Png-removebg-preview (1).png" width="40" height="40" alt="ticket"/></td><td class="uk-table-link"><a class="uk-link-reset" href=""><strong class="tourEsc">Histórico</strong><br /><span id="ingresso2Esc">Meia-Entrada</span></a></td><td class="uk-text-truncate dataEsc">05/11/2022</td><td id="preco2Esc" class="uk-text-nowrap">R$ 6,00</td><td id="quant2Esc" class="uk-text-nowrap uk-text-center">1</td>'
+    document.getElementById('tourEsc').innerHTML = tour
 
-  // document.getElementById('segundaLinha').innerHTML = maisLinhas
-  // document.getElementById('terceiraLinha').innerHTML = maisLinhas
+    document.getElementById('totalValorEsc').innerHTML = 'R$ ' + valorTotal + ',00'
+    document.getElementById('subtotalValorEsc').innerHTML = 'R$ ' + valorTotal + ',00'
+    document.getElementById('subtotalEsc').innerHTML = 'Subtotal (' + quantTotal +' itens)'
 
-  // data = 0
-  // tour = 1
-  // inteira = 2
-  // meia = 3
-  // pcd = 4
-} */
+    if (inteira > 0 && meia <= 0 && pcd <= 0) {
+      document.getElementById('ingressoEsc').innerHTML = 'Entrada inteira'
+    } else if (inteira <= 0 && meia > 0 && pcd <= 0) {
+      document.getElementById('ingressoEsc').innerHTML = 'Meia entrada'
+    } else if (inteira <= 0 && meia <= 0 && pcd > 0) {
+      document.getElementById('ingressoEsc').innerHTML = 'Entrada PCD'
+    }
+
+    document.getElementById('dataEsc').innerHTML = calendario
+
+    if (inteira > 0 && meia <= 0 && pcd <= 0) {
+      document.getElementById('precoEsc').innerHTML = 'R$ 12,00'
+    } else if (inteira <= 0 && meia > 0 && pcd <= 0) {
+      document.getElementById('precoEsc').innerHTML = 'R$ 6,00'
+    } else if (inteira <= 0 && meia <= 0 && pcd > 0) {
+      document.getElementById('precoEsc').innerHTML = 'R$ 6,00'
+    }
+
+    if (inteira > 0 && meia <= 0 && pcd <= 0) {
+      document.getElementById('quantEsc').innerHTML = inteira
+    } else if (inteira <= 0 && meia > 0 && pcd <= 0) {
+      document.getElementById('quantEsc').innerHTML = meia
+    } else if (inteira <= 0 && meia <= 0 && pcd > 0) {
+      document.getElementById('quantEsc').innerHTML = pcd
+    }
+
+    if (inteira > 0 && meia > 0 && pcd <= 0) {
+      document.getElementById('segundaLinha').innerHTML = maisLinhas
+
+      document.getElementById('tourEsc').innerHTML = tour
+      document.getElementById('ingressoEsc').innerHTML = 'Entrada inteira'
+      document.getElementById('dataEsc').innerHTML = calendario
+      document.getElementById('precoEsc').innerHTML = 'R$ 12,00'
+      document.getElementById('quantEsc').innerHTML = inteira
+
+      document.getElementById('tour2Esc').innerHTML = tour
+      document.getElementById('ingresso2Esc').innerHTML = 'Meia entrada'
+      document.getElementById('data2Esc').innerHTML = calendario
+      document.getElementById('preco2Esc').innerHTML = 'R$ 6,00'
+      document.getElementById('quant2Esc').innerHTML = meia
+    } else if (inteira > 0 && meia <= 0 && pcd > 0) {
+      document.getElementById('segundaLinha').innerHTML = maisLinhas
+
+      document.getElementById('tourEsc').innerHTML = tour
+      document.getElementById('ingressoEsc').innerHTML = 'Entrada inteira'
+      document.getElementById('dataEsc').innerHTML = calendario
+      document.getElementById('precoEsc').innerHTML = 'R$ 12,00'
+      document.getElementById('quantEsc').innerHTML = inteira
+
+      document.getElementById('tour2Esc').innerHTML = tour
+      document.getElementById('ingresso2Esc').innerHTML = 'Entrada PCD'
+      document.getElementById('data2Esc').innerHTML = calendario
+      document.getElementById('preco2Esc').innerHTML = 'R$ 6,00'
+      document.getElementById('quant2Esc').innerHTML = pcd
+    } else if (inteira <= 0 && meia > 0 && pcd > 0) {
+      document.getElementById('segundaLinha').innerHTML = maisLinhas
+
+      document.getElementById('tourEsc').innerHTML = tour
+      document.getElementById('ingressoEsc').innerHTML = 'Meia entrada'
+      document.getElementById('dataEsc').innerHTML = calendario
+      document.getElementById('precoEsc').innerHTML = 'R$ 6,00'
+      document.getElementById('quantEsc').innerHTML = meia
+
+      document.getElementById('tour2Esc').innerHTML = tour
+      document.getElementById('ingresso2Esc').innerHTML = 'Entrada PCD'
+      document.getElementById('data2Esc').innerHTML = calendario
+      document.getElementById('preco2Esc').innerHTML = 'R$ 6,00'
+      document.getElementById('quant2Esc').innerHTML = pcd
+    }
+
+    if (inteira > 0 && meia > 0 && pcd > 0) {
+      document.getElementById('segundaLinha').innerHTML = maisLinhas
+      document.getElementById('terceiraLinha').innerHTML = mais3Linhas
+
+      document.getElementById('tourEsc').innerHTML = tour
+      document.getElementById('ingressoEsc').innerHTML = 'Entrada inteira'
+      document.getElementById('dataEsc').innerHTML = calendario
+      document.getElementById('precoEsc').innerHTML = 'R$ 12,00'
+      document.getElementById('quantEsc').innerHTML = inteira
+
+      document.getElementById('tour2Esc').innerHTML = tour
+      document.getElementById('ingresso2Esc').innerHTML = 'Meia entrada'
+      document.getElementById('data2Esc').innerHTML = calendario
+      document.getElementById('preco2Esc').innerHTML = 'R$ 6,00'
+      document.getElementById('quant2Esc').innerHTML = meia
+
+      document.getElementById('tour3Esc').innerHTML = tour
+      document.getElementById('ingresso3Esc').innerHTML = 'Entrada PCD'
+      document.getElementById('data3Esc').innerHTML = calendario
+      document.getElementById('preco3Esc').innerHTML = 'R$ 6,00'
+      document.getElementById('quant3Esc').innerHTML = pcd
+    }
+  }
+}
 </script>
