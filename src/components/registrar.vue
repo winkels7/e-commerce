@@ -18,27 +18,27 @@
                     <div class="uk-margin">
                       <div class="uk-inline">
                           <span class="uk-form-icon" uk-icon="icon: mail"></span>
-                          <input class="uk-input" type="email" placeholder="Informe seu e-mail" aria-label="Not clickable icon">
+                          <input class="uk-input" type="email" name="email" v-model="email" placeholder="Informe seu e-mail" aria-label="Not clickable icon">
                       </div>
                   </div>
                                    <div class="uk-margin">
                       <div class="uk-inline">
                           <span class="uk-form-icon" uk-icon="icon: user"></span>
-                          <input class="uk-input" type="text" placeholder="Informe seu Nome" aria-label="Not clickable icon">
+                          <input class="uk-input" type="text" name="nome" v-model="nome" placeholder="Informe seu Nome" aria-label="Not clickable icon">
                       </div>
                   </div>
 
                   <div class="uk-margin">
                       <div class="uk-inline">
                           <span class="uk-form-icon uk-form-icon" uk-icon="icon: lock"></span>
-                          <input class="uk-input" type="password" placeholder="Digite uma senha" aria-label="Not clickable icon">
+                          <input class="uk-input" type="password" name="senha" v-model="senha" placeholder="Digite uma senha" aria-label="Not clickable icon">
                       </div>
                   </div>
                   
                   <div class="uk-margin">
                       <div class="uk-inline">
                           <span class="uk-form-icon uk-form-icon" uk-icon="icon: tag"></span>
-                          <input class="uk-input" type="number" placeholder="Informe seu cpf" aria-label="Not clickable icon">
+                          <input class="uk-input" type="number" name="cpf" v-model="cpf" placeholder="Informe seu cpf" aria-label="Not clickable icon">
                       </div>
                   </div>
 
@@ -53,11 +53,12 @@
                   <div class="uk-margin">
                       <div class="uk-inline">
                           <span class="uk-form-icon uk-form-icon" uk-icon="icon: receiver"></span>
-                          <input class="uk-input" type="tel" placeholder="Número de telefone" pattern="[+]{1}[0-9]{11,14}" required aria-label="Not clickable icon">
+                          <input class="uk-input" type="tel" name="tel" v-model="tel" placeholder="Número de telefone" pattern="[+]{1}[0-9]{11,14}" required aria-label="Not clickable icon">
                       </div>
                   </div>
                   <div class="uk-flex uk-flex-column">
-                  <a class="uk-button uk-button-secondary uk-width-1-3 uk-align-center uk-margin-small-top">Cadastrar</a>
+                  <a @on-click="register" class="uk-button uk-button-secondary uk-width-1-3 uk-align-center uk-margin-small-top">Cadastrar</a>
+                  <button @click="register">Registrar</button>
                   <a class="uk-text-secondary uk-button-text uk-text-center uk-link-heading uk-margin-small-top uk-width-1-3 uk-align-center" href="#modal-full" uk-toggle>voltar</a>
                 </div>
                 </form>
@@ -69,3 +70,28 @@
                         </div>
                     </div>
   </template>
+
+<script>
+import AuthService from '../services/AuthService';
+  export default{
+    data() {
+      return {
+        email: '',
+        password: ''
+      }
+    },
+  methods: {
+    async register (){
+      const response = await AuthService.register({
+        email: this.email,
+        senha: this.senha,
+        nome: 'nomeregistrar',
+        cpf: '11122233344',
+        sexo: 1,
+        tel: '123456789'
+      })
+      console.log(response.data)
+    }
+  }
+}
+</script>

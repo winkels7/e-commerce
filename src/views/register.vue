@@ -21,7 +21,11 @@
       async register (){
         const response = await AuthService.register({
           email: this.email,
-          password: this.password
+          senha: this.password,
+          nome: 'nometeste',
+          cpf: '11122233344',
+          sexo: 1,
+          tel: '123456789'
         })
         console.log(response.data)
       }
