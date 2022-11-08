@@ -330,7 +330,7 @@
     uk-slider
   >
     <article
-      class="uk-comment uk-comment-primary uk-margin-large-top uk-width-1-3 uk-box-shadow-small uk-box-shadow-hover-large"
+      class="uk-comment uk-comment-primary uk-margin-large-top uk-margin-medium-bottom uk-width-1-3 uk-box-shadow-small uk-box-shadow-hover-large"
       role="comment"
       data-aos="fade-right"
       data-aos-duration="1000"
@@ -370,7 +370,7 @@
     </article>
 
     <article
-      class="uk-comment uk-comment-primary uk-margin-large-top uk-width-1-3 uk-margin-medium-left uk-box-shadow-small uk-box-shadow-hover-large"
+      class="uk-comment uk-comment-primary uk-margin-large-top uk-margin-medium-bottom uk-width-1-3 uk-margin-medium-left uk-box-shadow-small uk-box-shadow-hover-large"
       role="comment"
       data-aos="fade-left"
       data-aos-duration="1000"
