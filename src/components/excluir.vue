@@ -1,6 +1,6 @@
 <template>
 
-<a class="uk-link-heading" href="#modal-excluir" uk-toggle><span class="uk-margin-small-right" uk-icon="trash"></span>Excluir Conta</a>
+<a class="uk-link-heading uk-position-bottom uk-margin-medium-left uk-margin-bottom" href="#modal-excluir" uk-toggle><span class="uk-margin-small-right uk-margin-large-top" uk-icon="trash"></span>Excluir Conta</a>
 <div id="modal-excluir" class="uk-flex-top" uk-modal>
     <div class="uk-modal-dialog uk-margin-auto-vertical">
         <button class="uk-modal-close-default" type="button" uk-close></button>

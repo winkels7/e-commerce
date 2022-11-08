@@ -13,14 +13,14 @@
                   <div class="uk-margin">
                       <div class="uk-inline">
                           <span class="uk-form-icon" uk-icon="icon: user"></span>
-                          <input class="uk-input" type="text" placeholder="Usuário" aria-label="Not clickable icon">
+                          <input class="uk-input" type="text" placeholder="E-mail" name="email" v-model="email" aria-label="Not clickable icon">
                       </div>
                   </div>
 
                   <div class="uk-margin">
                       <div class="uk-inline">
                           <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: lock"></span>
-                          <input class="uk-input" type="password" placeholder="Senha" aria-label="Not clickable icon">
+                          <input class="uk-input" type="password" placeholder="Senha" name="senha" v-model="senha" aria-label="Not clickable icon">
                       </div>
                   </div>
                   <div class="uk-flex uk-flex-column">
@@ -49,7 +49,7 @@
                         </div>
                         
                     </div>
-                            <a class="uk-button uk-button-secondary uk-width-1-1 uk-margin-small-top">Entrar</a>
+                            <button @on-click="login" class="uk-button uk-button-secondary uk-width-1-1 uk-margin-small-top">Entrar</button>
 
                   </form>
                 </div>
@@ -61,3 +61,23 @@
 
 </template>
 
+<script>
+import AuthService from '../services/AuthService';
+  export default{
+    data() {
+      return {
+        email: '',
+        senha: ''
+      }
+    },
+  methods: {
+    async login (){
+      const response = await AuthService.login({
+        email: this.email,
+        senha: this.senha
+      })
+      console.log(response.data)
+    }
+  }
+}
+</script>

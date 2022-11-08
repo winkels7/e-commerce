@@ -1,24 +1,26 @@
 const Carrinho = require('../models/Carrinho')
 
-const getCarrinho  = async (req, res) => {
+const getCarrinho = async (req, res) => {
   const usuario = req.body
-  console.log(`Carrinho recebido do body: ${usuario}`)
+  console.log(`Usuario recebido do body: ${usuario.email}`)
 
-  const resposta = await Carrinho.getCarrinho(usuario.email)
+  const resposta = await Carrinho.buscaCarrinho(usuario)
   console.log(`Resposta: ${resposta}`)
-  if (usuario.senha != resposta[0].senha) {
-    return res.send('Senha inválida')
-  }
-  if (!resposta) {
-    return res.send('Email não encontrado')
-  }
-  return res.json({ resposta })
+
+  return res.send(resposta)
 }
 
 const setCarrinho = async (req, res) => {
-  const usuario = req.body
+  const carrinho = req.body.carrinho
+  const usuario = req.body.usuario
+
   console.log(usuario)
-  Carrinho.addItem(usuario)
-  res.send('addUsuario OK')
+  console.log(carrinho)
+
+  carrinho.forEach(async (item) => {
+    await Carrinho.addItem(usuario, item)
+  })
+
+  return res.send('setCarrinho OK!')
 }
 module.exports = { getCarrinho, setCarrinho }

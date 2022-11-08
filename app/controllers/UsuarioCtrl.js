@@ -19,8 +19,7 @@ const registrar = async (req, res) => {
   const usuario = req.body
   console.log(usuario)
   const resposta = await Usuario.addUsuario(usuario)
-  res.send('addUsuario OK')
-  return resposta
+  return res.send(resposta)
 }
 
 const atualizar = async (req, res) => {

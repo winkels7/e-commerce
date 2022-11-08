@@ -1,9 +1,9 @@
 <script setup></script>
 
 <template>
-  <div class="uk-background-image@xl uk-background-cover uk-container-xlarge">
+  <div class="uk-background-image@xl uk-background-cover uk-container-expand uk-height-large">
     <div class="uk-flex uk-flex-around">
-      <div class="uk-margin-medium-top" 
+      <div class="uk-margin-auto-vertical" 
       data-aos="fade-right"
       data-aos-duration="1000"
       >
@@ -15,7 +15,7 @@
         </p>
       </div>
       <div
-        class="uk-position-relative uk-visible-toggle uk-light uk-width-1-3 uk-margin-medium-top"
+        class="uk-position-relative uk-visible-toggle uk-light uk-width-1-3 uk-margin-large-top"
         tabindex="-1"
         uk-slideshow="autoplay: true min-height: 300; max-height: 700; width: 300; animation: push"
         data-aos="fade-up"
@@ -65,7 +65,7 @@
   </div>
 
   <div
-    class="uk-container-large uk-background-secondary uk-flex uk-flex-center uk-box-shadow-medium"
+    class="uk-container-expand uk-height-viewport uk-background-secondary uk-flex uk-flex-center uk-box-shadow-medium uk-padding-large"
   >
     <div
       class="uk-container-xlarge uk-background-muted uk-width-3-4 uk-height-large uk-margin-large-top uk-border-rounded uk-box-shadow-large uk-flex"
@@ -114,6 +114,8 @@
             onclick="UIkit.notification({message:'<span uk-icon=\'icon: check\'></span> Produto adicionado no carrinho!'})"
             @click="everything()"
             class="uk-button uk-button-secondary uk-margin-small-bottom uk-margin-small-top uk-border-rounded"
+            data-aos="fade-right"
+        data-aos-duration="1000"
           >
             Adicionar no Carrinho
           </a>
@@ -122,6 +124,8 @@
             class="uk-button uk-button-secondary uk-button-small uk-border-rounded"
             type="button"
             uk-toggle="target: #offcanvas-push"
+            data-aos="fade-right"
+        data-aos-duration="1000"
             >+ Informações</a
           >
 
@@ -326,7 +330,7 @@
     uk-slider
   >
     <article
-      class="uk-comment uk-comment-primary uk-margin-large-top uk-width-1-3 uk-box-shadow-small uk-box-shadow-hover-large"
+      class="uk-comment uk-comment-primary uk-margin-large-top uk-margin-medium-bottom uk-width-1-3 uk-box-shadow-small uk-box-shadow-hover-large"
       role="comment"
       data-aos="fade-right"
       data-aos-duration="1000"
@@ -366,7 +370,7 @@
     </article>
 
     <article
-      class="uk-comment uk-comment-primary uk-margin-large-top uk-width-1-3 uk-margin-medium-left uk-box-shadow-small uk-box-shadow-hover-large"
+      class="uk-comment uk-comment-primary uk-margin-large-top uk-margin-medium-bottom uk-width-1-3 uk-margin-medium-left uk-box-shadow-small uk-box-shadow-hover-large"
       role="comment"
       data-aos="fade-left"
       data-aos-duration="1000"
