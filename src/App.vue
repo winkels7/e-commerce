@@ -10,7 +10,7 @@
                                 <ul class="uk-navbar-nav uk-visible@m">
                                         <li><RouterLink to="/" uk-icon="home"></RouterLink></li>
                                         <!-- <li><RouterLink to="/login">Login</RouterLink></li> -->
-                                        <li><RouterLink to="/checkout" uk-icon="cart"><span class="uk-badge uk-background-muted uk-text-secondary">1</span></RouterLink></li>
+                                        <li><RouterLink to="/checkout" uk-icon="cart"         onclick="window.location.reload()"><span class="uk-badge uk-background-muted uk-text-secondary">1</span></RouterLink></li>
                                         <!-- <li><RouterLink to="/user" uk-icon="user"></RouterLink></li> -->
                                         <li><RouterLink to="/user" uk-icon="user"></RouterLink>
                                                 <div class="uk-navbar-dropdown">
