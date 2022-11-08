@@ -1,7 +1,7 @@
 <template>
   <div class="uk-container-expand uk-background-secondary uk-height-viewport uk-background-image@xl uk-background-cover uk-background-default uk-flex ">
     
-<div class="uk-container uk-container-small uk-height-viewport uk-background-primary uk-width-1-4 uk-margin-medium-top  uk-border-rounded uk-box-shadow-large uk-margin-medium-bottom"       
+<div class="uk-container uk-container-small uk-height-viewport uk-background-primary uk-width-1-4 uk-margin-medium-top  uk-border-rounded uk-box-shadow-large uk-margin-medium-bottom uk-position-relative"       
 data-aos="fade-right"
 data-aos-duration="1000"
 >

@@ -1,6 +1,6 @@
 <template>
 
-  <a class="uk-link-heading" href="#modal-senha" uk-toggle><span class="uk-margin-medium-left uk-margin-small-right uk-margin-large-top" uk-icon="settings"></span>Trocar Senha</a>
+  <a class="uk-link-heading uk-position-bottom-right uk-margin-medium-right uk-margin-bottom" href="#modal-senha" uk-toggle><span class="uk-margin-medium-left uk-margin-small-right uk-margin-large-top" uk-icon="settings"></span>Trocar Senha</a>
   <div id="modal-senha" class='uk-flex-top' uk-modal>
       <div class="uk-modal-dialog uk-margin-auto-vertical">
           <button class="uk-modal-close-default" type="button" uk-close></button>

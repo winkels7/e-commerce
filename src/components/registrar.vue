@@ -57,8 +57,8 @@
                       </div>
                   </div>
                   <div class="uk-flex uk-flex-column">
-                  <a @on-click="register" class="uk-button uk-button-secondary uk-width-1-3 uk-align-center uk-margin-small-top">Cadastrar</a>
-                  <button @click="register">Registrar</button>
+                  <!-- <a @on-click="register" class="uk-button uk-button-secondary uk-width-1-3 uk-align-center uk-margin-small-top">Cadastrar</a> -->
+                  <button @click="register" class="uk-button uk-button-secondary uk-width-1-3 uk-align-center uk-margin-small-top">Cadastrar</button>
                   <a class="uk-text-secondary uk-button-text uk-text-center uk-link-heading uk-margin-small-top uk-width-1-3 uk-align-center" href="#modal-full" uk-toggle>voltar</a>
                 </div>
                 </form>

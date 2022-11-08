@@ -114,6 +114,8 @@
             onclick="UIkit.notification({message:'<span uk-icon=\'icon: check\'></span> Produto adicionado no carrinho!'})"
             @click="everything()"
             class="uk-button uk-button-secondary uk-margin-small-bottom uk-margin-small-top uk-border-rounded"
+            data-aos="fade-right"
+        data-aos-duration="1000"
           >
             Adicionar no Carrinho
           </a>
@@ -122,6 +124,8 @@
             class="uk-button uk-button-secondary uk-button-small uk-border-rounded"
             type="button"
             uk-toggle="target: #offcanvas-push"
+            data-aos="fade-right"
+        data-aos-duration="1000"
             >+ Informações</a
           >
 
