@@ -44,8 +44,8 @@
 
                   <div class="uk-margin">
                     <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid uk-align-center">
-                        <label><input class="uk-radio" type="radio" name="radio2" checked> Masculino</label>
-                        <label><input class="uk-radio" type="radio" name="radio2"> Feminino</label>
+                        <label><input class="uk-radio" type="radio" name="radio2" value="2" v-model="sexo" checked> Masculino</label>
+                        <label><input class="uk-radio" type="radio" name="radio2" value="3" v-model="sexo"> Feminino</label>
                     </div>
                   </div>
 
@@ -77,7 +77,8 @@ import AuthService from '../services/AuthService';
     data() {
       return {
         email: '',
-        password: ''
+        password: '',
+        sexo: 2
       }
     },
   methods: {
@@ -87,7 +88,7 @@ import AuthService from '../services/AuthService';
         senha: this.senha,
         nome: this.nome,
         cpf: this.cpf,
-        sexo: 1,
+        sexo: this.sexo,
         tel: this.tel
       })
       console.log(response.data)
