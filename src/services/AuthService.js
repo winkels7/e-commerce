@@ -4,6 +4,9 @@ export default {
         register(credentials) {
                 return Api().post('cadastro', credentials)
         },
+        login(credentials){
+                return Api().post('login', credentials)
+        },
 }
 
 // AuthService.register({

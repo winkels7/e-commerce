@@ -85,10 +85,10 @@ import AuthService from '../services/AuthService';
       const response = await AuthService.register({
         email: this.email,
         senha: this.senha,
-        nome: 'nomeregistrar',
-        cpf: '11122233344',
+        nome: this.nome,
+        cpf: this.cpf,
         sexo: 1,
-        tel: '123456789'
+        tel: this.tel
       })
       console.log(response.data)
     }
