@@ -1,9 +1,9 @@
 <template>
   <div id="app"
-    class="uk-container-large uk-background-secondary uk-flex uk-flex-around"
+    class="uk-container-expand uk-background-secondary uk-flex uk-flex-around uk-height-viewport"
   >
     <div
-      class="uk-container uk-container-medium uk-background-muted uk-width-1-2 uk-margin-large-top uk-border-rounded uk-overflow-auto"
+      class="uk-container uk-container-medium uk-background-muted uk-width-1-2 uk-margin-large-top uk-border-rounded uk-overflow-auto uk-margin-large-bottom"
       data-aos="fade-right"
       data-aos-duration="1000"
 
@@ -70,7 +70,7 @@
       </div>
     </div>
     <div
-      class="uk-container uk-container-medium uk-background-muted uk-width-1-4 uk-margin-large-top uk-border-rounded"
+      class="uk-container uk-container-medium uk-background-muted uk-width-1-4 uk-margin-large-top uk-border-rounded uk-margin-large-bottom"
       data-aos="fade-left"
       data-aos-duration="1000"
 
@@ -144,7 +144,7 @@
       </div>
     </div>
   </div>
-  <div class="uk-container uk-container-small uk-background-secondary"></div>
+  <!-- <div class="uk-container uk-container-small uk-background-secondary"></div> -->
 </template>
 
 <script>

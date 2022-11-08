@@ -1,9 +1,9 @@
 <script setup></script>
 
 <template>
-  <div class="uk-background-image@xl uk-background-cover uk-container-xlarge">
+  <div class="uk-background-image@xl uk-background-cover uk-container-expand uk-height-large">
     <div class="uk-flex uk-flex-around">
-      <div class="uk-margin-medium-top" 
+      <div class="uk-margin-auto-vertical" 
       data-aos="fade-right"
       data-aos-duration="1000"
       >
@@ -15,7 +15,7 @@
         </p>
       </div>
       <div
-        class="uk-position-relative uk-visible-toggle uk-light uk-width-1-3 uk-margin-medium-top"
+        class="uk-position-relative uk-visible-toggle uk-light uk-width-1-3 uk-margin-large-top"
         tabindex="-1"
         uk-slideshow="autoplay: true min-height: 300; max-height: 700; width: 300; animation: push"
         data-aos="fade-up"
@@ -65,7 +65,7 @@
   </div>
 
   <div
-    class="uk-container-large uk-background-secondary uk-flex uk-flex-center uk-box-shadow-medium"
+    class="uk-container-expand uk-height-viewport uk-background-secondary uk-flex uk-flex-center uk-box-shadow-medium uk-padding-large"
   >
     <div
       class="uk-container-xlarge uk-background-muted uk-width-3-4 uk-height-large uk-margin-large-top uk-border-rounded uk-box-shadow-large uk-flex"
