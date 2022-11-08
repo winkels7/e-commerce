@@ -71,7 +71,7 @@
       class="uk-container-xlarge uk-background-muted uk-width-3-4 uk-height-large uk-margin-large-top uk-border-rounded uk-box-shadow-large uk-flex"
     
       >
-      <form class="uk-margin-large-left uk-margin-medium-top">
+      <form class="uk-margin-large-left uk-margin-small-top">
         <h1 data-aos="fade-right"
             data-aos-duration="1000">Compre seu Ingresso</h1>
         <hr class="uk-divider-small" />
@@ -121,7 +121,7 @@
           </a>
 
           <a
-            class="uk-button uk-button-secondary uk-button-small uk-border-rounded"
+            class="uk-button uk-button-secondary uk-button-small uk-border-rounded uk-margin-bottom"
             type="button"
             uk-toggle="target: #offcanvas-push"
             data-aos="fade-right"
