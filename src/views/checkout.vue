@@ -172,7 +172,15 @@ connection.onsuccess = (event) => {
     console.warn(`MEIA: ${meia}`)
     console.warn(`PCD: ${pcd}`)
 
-    // const maisLinhas = '<td><input class="uk-checkbox" type="checkbox" aria-label="Checkbox" /></td><td><img class="uk-preserve-width uk-border-circle" src="../assets/Icone-ticket-Png-removebg-preview (1).png" width="40" height="40" alt="ticket"/></td><td class="uk-table-link"><a class="uk-link-reset" href=""><strong id="tour2Esc">Histórico</strong><br /><span id="ingresso2Esc">Meia-Entrada</span></a></td><td id="data2Esc" class="uk-text-truncate">05/11/2022</td><td id="preco2Esc" class="uk-text-nowrap">R$ 6,00</td><td id="quant2Esc" class="uk-text-nowrap uk-text-center">1</td>'
+    var ano  = calendario.split("-")[0];
+    var mes  = calendario.split("-")[1];
+    var dia  = calendario.split("-")[2];
+
+    var novoCalendario = dia + '/' + mes + '/' + ano
+
+    console.warn(`CALENDÁRIO NOVO: ${novoCalendario}`)
+    
+    // ano + '-' + ("0"+mes).slice(-2) + '-' + ("0"+dia).slice(-2)
     
     const maisLinhas = '<tr><td><input class="uk-checkbox" type="checkbox" aria-label="Checkbox"/></td><td><img class="uk-preserve-width uk-border-circle" src="../assets/Icone-ticket-Png-removebg-preview (1).png" width="40" height="40" alt=""/></td><td class="uk-table-link"><a class="uk-link-reset" href=""><strong id="tour2Esc">{{ tour }}</strong><br /><span id="ingresso2Esc">{{ inteira }}</span></a></td><td id="data2Esc" class="uk-text-truncate">{{ calendario }}</td><td id="preco2Esc" class="uk-text-nowrap">{{ preco }}</td><td id="quant2Esc" class="uk-text-nowrap uk-text-center">{{ quant }}</td></tr>'
     const mais3Linhas = '<td><input class="uk-checkbox" type="checkbox" aria-label="Checkbox"/></td><td><img class="uk-preserve-width uk-border-circle" src="../assets/Icone-ticket-Png-removebg-preview (1).png" width="40" height="40" alt=""/></td><td class="uk-table-link"><a class="uk-link-reset" href=""><strong id="tour3Esc">{{ tour }}</strong><br /><span id="ingresso3Esc">{{ inteira }}</span></a></td><td id="data3Esc" class="uk-text-truncate">{{ calendario }}</td><td id="preco3Esc" class="uk-text-nowrap">{{ preco }}</td><td id="quant3Esc" class="uk-text-nowrap uk-text-center">{{ quant }}</td>'
@@ -194,7 +202,7 @@ connection.onsuccess = (event) => {
       document.getElementById('ingressoEsc').innerHTML = 'Entrada PCD'
     }
 
-    document.getElementById('dataEsc').innerHTML = calendario
+    document.getElementById('dataEsc').innerHTML = novoCalendario
 
     if (inteira > 0 && meia <= 0 && pcd <= 0) {
       document.getElementById('precoEsc').innerHTML = 'R$ 12,00'
@@ -217,13 +225,13 @@ connection.onsuccess = (event) => {
 
       document.getElementById('tourEsc').innerHTML = tour
       document.getElementById('ingressoEsc').innerHTML = 'Entrada inteira'
-      document.getElementById('dataEsc').innerHTML = calendario
+      document.getElementById('dataEsc').innerHTML = novoCalendario
       document.getElementById('precoEsc').innerHTML = 'R$ 12,00'
       document.getElementById('quantEsc').innerHTML = inteira
 
       document.getElementById('tour2Esc').innerHTML = tour
       document.getElementById('ingresso2Esc').innerHTML = 'Meia entrada'
-      document.getElementById('data2Esc').innerHTML = calendario
+      document.getElementById('data2Esc').innerHTML = novoCalendario
       document.getElementById('preco2Esc').innerHTML = 'R$ 6,00'
       document.getElementById('quant2Esc').innerHTML = meia
     } else if (inteira > 0 && meia <= 0 && pcd > 0) {
@@ -231,13 +239,13 @@ connection.onsuccess = (event) => {
 
       document.getElementById('tourEsc').innerHTML = tour
       document.getElementById('ingressoEsc').innerHTML = 'Entrada inteira'
-      document.getElementById('dataEsc').innerHTML = calendario
+      document.getElementById('dataEsc').innerHTML = novoCalendario
       document.getElementById('precoEsc').innerHTML = 'R$ 12,00'
       document.getElementById('quantEsc').innerHTML = inteira
 
       document.getElementById('tour2Esc').innerHTML = tour
       document.getElementById('ingresso2Esc').innerHTML = 'Entrada PCD'
-      document.getElementById('data2Esc').innerHTML = calendario
+      document.getElementById('data2Esc').innerHTML = novoCalendario
       document.getElementById('preco2Esc').innerHTML = 'R$ 6,00'
       document.getElementById('quant2Esc').innerHTML = pcd
     } else if (inteira <= 0 && meia > 0 && pcd > 0) {
@@ -245,13 +253,13 @@ connection.onsuccess = (event) => {
 
       document.getElementById('tourEsc').innerHTML = tour
       document.getElementById('ingressoEsc').innerHTML = 'Meia entrada'
-      document.getElementById('dataEsc').innerHTML = calendario
+      document.getElementById('dataEsc').innerHTML = novoCalendario
       document.getElementById('precoEsc').innerHTML = 'R$ 6,00'
       document.getElementById('quantEsc').innerHTML = meia
 
       document.getElementById('tour2Esc').innerHTML = tour
       document.getElementById('ingresso2Esc').innerHTML = 'Entrada PCD'
-      document.getElementById('data2Esc').innerHTML = calendario
+      document.getElementById('data2Esc').innerHTML = novoCalendario
       document.getElementById('preco2Esc').innerHTML = 'R$ 6,00'
       document.getElementById('quant2Esc').innerHTML = pcd
     }
@@ -262,19 +270,19 @@ connection.onsuccess = (event) => {
 
       document.getElementById('tourEsc').innerHTML = tour
       document.getElementById('ingressoEsc').innerHTML = 'Entrada inteira'
-      document.getElementById('dataEsc').innerHTML = calendario
+      document.getElementById('dataEsc').innerHTML = novoCalendario
       document.getElementById('precoEsc').innerHTML = 'R$ 12,00'
       document.getElementById('quantEsc').innerHTML = inteira
 
       document.getElementById('tour2Esc').innerHTML = tour
       document.getElementById('ingresso2Esc').innerHTML = 'Meia entrada'
-      document.getElementById('data2Esc').innerHTML = calendario
+      document.getElementById('data2Esc').innerHTML = novoCalendario
       document.getElementById('preco2Esc').innerHTML = 'R$ 6,00'
       document.getElementById('quant2Esc').innerHTML = meia
 
       document.getElementById('tour3Esc').innerHTML = tour
       document.getElementById('ingresso3Esc').innerHTML = 'Entrada PCD'
-      document.getElementById('data3Esc').innerHTML = calendario
+      document.getElementById('data3Esc').innerHTML = novoCalendario
       document.getElementById('preco3Esc').innerHTML = 'R$ 6,00'
       document.getElementById('quant3Esc').innerHTML = pcd
     }
