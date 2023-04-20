@@ -130,7 +130,6 @@
                           name="tel"
                           v-model="tel"
                           placeholder="Número de telefone"
-                          pattern="[+]{1}[0-9]{11,14}"
                           required
                           aria-label="Not clickable icon"
                         />
