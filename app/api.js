@@ -18,9 +18,42 @@ app.get('/api/', (req, res) => {
   res.send(request)
 })
 
-app.post('/api/', async (req, res) => {
-  // const { name, email, password}
-  req.post(addUsuario)
+// app.post('/api/login', async (req, res) => {
+//   const { email, cpf, senha } = req.body
+//   try {
+//     const attempt = {
+//       email,
+//       cpf,
+//       senha
+//     }
+//   }
+
+// })
+
+app.post('/api/cadastro', async (req, res) => {
+  const { email, senha, nome, sexo, cpf, tel } = req.body
+  try {
+    const usuario = {
+      email,
+      senha,
+      nome,
+      sexo,
+      cpf,
+      tel,
+    }
+    const result = await addUsuario(usuario)
+    const response = JSON.stringify({
+      error: false,
+      result,
+    })
+    res.send(response)
+  } catch (error) {
+    const response = JSON.stringify({
+      error: true,
+      message: error.message,
+    })
+    res.status(500).send(response)
+  }
 })
 
 app.listen(3000)

@@ -1,5 +1,7 @@
+const { data } = require('../../src/libs/uikit/js/uikit')
 const database = require('../config/database')
 const validate = require('gerador-validador-cpf')
+const bcrypt = require('bcrypt')
 
 async function getUsuario(usuario) {
   const client = await database()
@@ -12,9 +14,30 @@ async function getUsuario(usuario) {
   return resposta.rows
 }
 
+async function loginUsuario(usuario) {
+  try {
+    const client = await database()
+    const sql = `SELECT senha FROM tb_user WHERE cpf = $1 OR email = $2;`
+    const values = [usuario.cpf, usuario.email]
+    const resposta = await client.query(sql, values)
+    client.release()
+
+    // bcrypt.compare(usuario.senha, resposta.senha, function(err, result) {
+    //   // result == true
+    // });
+
+    return resposta
+  } catch (error) {
+    return `Erro: ${error}`
+  }
+}
+
 async function addUsuario(usuario) {
   try {
     const client = await database()
+    // Fazer o bcrypt da senha antes de adicionar na database
+    usuario.senha = bcrypt.hash(usuario.senha, 3)
+
     const sql = `INSERT INTO tb_user (email, senha, nome, sexo, cpf, tel) VALUES ($1, $2, $3, $4, $5, $6);`
     const values = [
       usuario.email,
@@ -52,6 +75,7 @@ async function updatePerfilUsuario(id, usuario) {
 module.exports = {
   getUsuario,
   addUsuario,
+  loginUsuario,
   getPerfilUsuario,
   updatePerfilUsuario,
 }
