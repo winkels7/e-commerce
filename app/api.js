@@ -2,7 +2,7 @@ const express = require('express')
 const cors = require('cors')
 
 const router = require('./routes')
-const { addUsuario } = require('./models/Usuario')
+const { addUsuario, loginUsuario } = require('./models/Usuario')
 const app = express()
 
 app.use(cors())
@@ -18,17 +18,28 @@ app.get('/api/', (req, res) => {
   res.send(request)
 })
 
-// app.post('/api/login', async (req, res) => {
-//   const { email, cpf, senha } = req.body
-//   try {
-//     const attempt = {
-//       email,
-//       cpf,
-//       senha
-//     }
-//   }
-
-// })
+app.post('/api/login', async (req, res) => {
+  const { email, cpf, senha } = req.body
+  try {
+    const usuario = {
+      email,
+      cpf,
+      senha
+    }
+    const result = await loginUsuario(usuario)
+    const response = JSON.stringify({
+      error: false,
+      result,
+    })
+    res.send(response)
+  } catch (error) {
+    const response = JSON.stringify({
+      error: true,
+      message: error.message,
+    })
+    res.status(500).send(response)
+  }
+})
 
 app.post('/api/cadastro', async (req, res) => {
   const { email, senha, nome, sexo, cpf, tel } = req.body

@@ -17,16 +17,27 @@ async function getUsuario(usuario) {
 async function loginUsuario(usuario) {
   try {
     const client = await database()
-    const sql = `SELECT senha FROM tb_user WHERE cpf = $1 OR email = $2;`
+    const sql = `SELECT * FROM tb_user WHERE email = $2;`
+    //  \/ pode dar conflitos quando os dois (cpf e email) tem uma correspondencia
+    // const sql = `SELECT * FROM tb_user WHERE cpf = $1 OR email = $2;` 
     const values = [usuario.cpf, usuario.email]
-    const resposta = await client.query(sql, values)
+    const resDB = await client.query(sql, values)
     client.release()
 
-    // bcrypt.compare(usuario.senha, resposta.senha, function(err, result) {
-    //   // result == true
-    // });
+    if (!resDB.rows[0]) {
+      throw new Error('Email ou senha incorreta')
+    }
 
-    return resposta
+    const hashDB = resDB.rows[0].senha
+
+    const senhaCorreta = await bcrypt.compare(usuario.senha, hashDB) // booleana. se for true, é porque as senhas batem
+
+    if (senhaCorreta) {
+      return resDB
+    } else {
+      throw new Error('Email ou senha incorreta');
+    }
+
   } catch (error) {
     return `Erro: ${error}`
   }
@@ -36,12 +47,13 @@ async function addUsuario(usuario) {
   try {
     const client = await database()
     // Fazer o bcrypt da senha antes de adicionar na database
-    usuario.senha = bcrypt.hash(usuario.senha, 3)
+    const hash = await bcrypt.hash(usuario.senha, 3)
 
     const sql = `INSERT INTO tb_user (email, senha, nome, sexo, cpf, tel) VALUES ($1, $2, $3, $4, $5, $6);`
     const values = [
       usuario.email,
-      usuario.senha,
+      hash,
+      // usuario.senha,
       usuario.nome,
       usuario.sexo,
       usuario.cpf,
