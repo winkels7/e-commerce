@@ -60,7 +60,7 @@ data-aos-duration="1000"
         <tbody>
             <tr>
                 <td><input class="uk-checkbox" type="checkbox" aria-label="Checkbox"></td>
-                <td><img class="uk-preserve-width uk-border-circle" src="../assets/Icone-ticket-Png-removebg-preview (1).png" width="40" height="40" alt=""></td>
+                <td><img class="uk-preserve-width uk-border-circle"  src="../assets/Icone-ticket.png" width="40" height="40" alt=""></td>
                 <td class="uk-table-link">
                     <a class="uk-link-reset" href=""> <strong>Histórico</strong><br>
                       Meia-Entrada</a>
