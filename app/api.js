@@ -2,6 +2,7 @@ const express = require('express')
 const cors = require('cors')
 
 const router = require('./routes')
+const { addUsuario } = require('./models/Usuario')
 const app = express()
 
 app.use(cors())
@@ -15,6 +16,11 @@ app.get('/api/', (req, res) => {
     result: 'Olá mundo isso é um teste',
   })
   res.send(request)
+})
+
+app.post('/api/', async (req, res) => {
+  const { name, email, password, }
+  req.post(addUsuario)
 })
 
 app.listen(3000)
