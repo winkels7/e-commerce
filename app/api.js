@@ -19,7 +19,7 @@ app.get('/api/', (req, res) => {
 })
 
 app.post('/api/', async (req, res) => {
-  const { name, email, password, }
+  // const { name, email, password}
   req.post(addUsuario)
 })
 
