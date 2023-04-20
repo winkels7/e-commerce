@@ -1,11 +1,14 @@
 <script setup></script>
 
 <template>
-  <div class="uk-background-image@xl uk-background-cover uk-container-expand uk-height-large">
+  <div
+    class="uk-background-image@xl uk-background-cover uk-container-expand uk-height-large"
+  >
     <div class="uk-flex uk-flex-around">
-      <div class="uk-margin-auto-vertical" 
-      data-aos="fade-right"
-      data-aos-duration="1000"
+      <div
+        class="uk-margin-auto-vertical"
+        data-aos="fade-right"
+        data-aos-duration="1000"
       >
         <h1 class="uk-text-muted">Parque das Palmeiras</h1>
         <hr class="uk-divider-small" />
@@ -21,7 +24,7 @@
         data-aos="fade-up"
         data-aos-duration="1000"
       >
-        <ul class="uk-slideshow-items" >
+        <ul class="uk-slideshow-items">
           <li>
             <img
               src="../assets/pexels-george-pak-7968305.jpg"
@@ -69,16 +72,18 @@
   >
     <div
       class="uk-container-xlarge uk-background-muted uk-width-3-4 uk-height-large uk-margin-large-top uk-border-rounded uk-box-shadow-large uk-flex"
-    
-      >
+    >
       <form class="uk-margin-large-left uk-margin-small-top">
-        <h1 data-aos="fade-right"
-            data-aos-duration="1000">Compre seu Ingresso</h1>
+        <h1 data-aos="fade-right" data-aos-duration="1000">
+          Compre seu Ingresso
+        </h1>
         <hr class="uk-divider-small" />
 
-        <div class="uk-margin uk-margin-medium-top" 
-        data-aos="fade-down"
-            data-aos-duration="1000">
+        <div
+          class="uk-margin uk-margin-medium-top"
+          data-aos="fade-down"
+          data-aos-duration="1000"
+        >
           <div class="uk-inline">
             <label class="uk-form-label">Data da Reserva</label>
             <div class="uk-form-controls">
@@ -93,8 +98,7 @@
         </div>
 
         <!-- tipo do tour -->
-        <div class="uk-margin" data-aos="fade-down"
-            data-aos-duration="1000">
+        <div class="uk-margin" data-aos="fade-down" data-aos-duration="1000">
           <label class="uk-form-label" for="form-stacked-select">Tour</label>
           <div class="uk-form-controls">
             <select
@@ -115,7 +119,7 @@
             @click="everything()"
             class="uk-button uk-button-secondary uk-margin-small-bottom uk-margin-small-top uk-border-rounded"
             data-aos="fade-right"
-        data-aos-duration="1000"
+            data-aos-duration="1000"
           >
             Adicionar no Carrinho
           </a>
@@ -125,11 +129,11 @@
             type="button"
             uk-toggle="target: #offcanvas-push"
             data-aos="fade-right"
-        data-aos-duration="1000"
+            data-aos-duration="1000"
             >+ Informações</a
           >
 
-          <div id="offcanvas-push" uk-offcanvas="mode: reveal; overlay: true" >
+          <div id="offcanvas-push" uk-offcanvas="mode: reveal; overlay: true">
             <div class="uk-offcanvas-bar">
               <button
                 class="uk-offcanvas-close"
@@ -185,11 +189,7 @@
             <div
               class="uk-position-absolute uk-position-medium uk-position-center-right"
             >
-              <img
-                src="../assets/Icone-ticket-Png-removebg-preview (1).png"
-                alt="ticket"
-                width="100"
-              />
+              <img src="../assets/Icone-ticket.png" alt="ticket" width="100" />
             </div>
             <input
               v-model="inteira"
@@ -212,11 +212,7 @@
             <div
               class="uk-position-absolute uk-position-medium uk-position-center-right"
             >
-              <img
-                src="../assets/Icone-ticket-Png-removebg-preview (1).png"
-                alt="ticket"
-                width="100"
-              />
+              <img src="../assets/Icone-ticket.png" alt="ticket" width="100" />
             </div>
             <input
               v-model="meia"
@@ -238,11 +234,7 @@
             <div
               class="uk-position-absolute uk-position-medium uk-position-center-right"
             >
-              <img
-                src="../assets/Icone-ticket-Png-removebg-preview (1).png"
-                alt="ticket"
-                width="100"
-              />
+              <img src="../assets/Icone-ticket.png" alt="ticket" width="100" />
             </div>
             <input
               v-model="pcd"
@@ -269,32 +261,16 @@
       >
         <ul class="uk-slideshow-items">
           <li>
-            <img
-              src="../assets/Captura de tela de 2022-11-03 08-55-48.png"
-              alt=""
-              uk-cover
-            />
+            <img src="../assets/copo.png" alt="" uk-cover />
           </li>
           <li>
-            <img
-              src="../assets/Captura de tela de 2022-11-03 08-56-05.png"
-              alt=""
-              uk-cover
-            />
+            <img src="../assets/papel.png" alt="" uk-cover />
           </li>
           <li>
-            <img
-              src="../assets/Captura de tela de 2022-11-03 08-57-29.png"
-              alt=""
-              uk-cover
-            />
+            <img src="../assets/sacola.png" alt="" uk-cover />
           </li>
           <li>
-            <img
-              src="../assets/Captura de tela de 2022-11-03 08-58-05.png"
-              alt=""
-              uk-cover
-            />
+            <img src="../assets/caneta.png" alt="" uk-cover />
           </li>
         </ul>
 
@@ -408,55 +384,78 @@
         </p>
       </div>
     </article>
-  
   </div>
 
-  <div class="uk-flex uk-flex-center uk-margin-large-bottom uk-margin-large-top">
+  <div
+    class="uk-flex uk-flex-center uk-margin-large-bottom uk-margin-large-top"
+  >
     <div class="uk-flex uk-flex-column">
-    <h1 class="uk-text-center" data-aos="fade-right" data-aos-duration="1000">Como Chegar</h1>
-    <hr class="uk-divider-icon uk-text-center" data-aos="fade-left" data-aos-duration="2000">
-    <iframe data-aos="fade-down" data-aos-duration="1000" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3466.025640698292!2d-52.4573542849661!3d-29.69003628201257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951cbb5d74fd5c3d%3A0x205027b242283553!2sImply%20Tecnologia!5e0!3m2!1spt-BR!2sbr!4v1667835248173!5m2!1spt-BR!2sbr" width="800" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="uk-margin-large-bottom"></iframe>  </div>
+      <h1 class="uk-text-center" data-aos="fade-right" data-aos-duration="1000">
+        Como Chegar
+      </h1>
+      <hr
+        class="uk-divider-icon uk-text-center"
+        data-aos="fade-left"
+        data-aos-duration="2000"
+      />
+      <iframe
+        data-aos="fade-down"
+        data-aos-duration="1000"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3466.025640698292!2d-52.4573542849661!3d-29.69003628201257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951cbb5d74fd5c3d%3A0x205027b242283553!2sImply%20Tecnologia!5e0!3m2!1spt-BR!2sbr!4v1667835248173!5m2!1spt-BR!2sbr"
+        width="800"
+        height="500"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        class="uk-margin-large-bottom"
+      ></iframe>
+    </div>
   </div>
 </template>
 
 <script>
 import StorageTable from './controllers/Checkout.controller.mjs'
 
-  export default {
-    data() {
-      return {
-        calendario: '',
-        tour: '',
-        inteira: 0,
-        meia: 0,
-        pcd: 0
-      }
-    },
+export default {
+  data() {
+    return {
+      calendario: '',
+      tour: '',
+      inteira: 0,
+      meia: 0,
+      pcd: 0,
+    }
+  },
 
   methods: {
     everything() {
       const $storage = new StorageTable()
 
-        // alert(this.inteira)
+      // alert(this.inteira)
 
-        $storage.criarTable({
-          nome: 'ingressos',
-          item: { nome: 'ingresso_chave', chaves: ['chave'], params: { unique: true } }
-        })
+      $storage.criarTable({
+        nome: 'ingressos',
+        item: {
+          nome: 'ingresso_chave',
+          chaves: ['chave'],
+          params: { unique: true },
+        },
+      })
 
-        $storage.popularTable({
-          nome: 'ingressos',
-          permissao: 'readwrite',
-          action: 'ingressos',
-          campos: [
-            { info: this.calendario },
-            { info: this.tour },
-            { info: this.inteira },
-            { info: this.meia },
-            { info: this.pcd }
-          ]
-        })
-    }
-  }
+      $storage.popularTable({
+        nome: 'ingressos',
+        permissao: 'readwrite',
+        action: 'ingressos',
+        campos: [
+          { info: this.calendario },
+          { info: this.tour },
+          { info: this.inteira },
+          { info: this.meia },
+          { info: this.pcd },
+        ],
+      })
+    },
+  },
 }
 </script>
